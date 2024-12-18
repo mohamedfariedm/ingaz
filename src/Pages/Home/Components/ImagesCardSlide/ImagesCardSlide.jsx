@@ -6,42 +6,46 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
+import Victor1 from "assets/1.svg";
+import Victor2 from "assets/2.svg";
+import Victor3 from "assets/3.svg";
+import Victor4 from "assets/4.svg";
+import Victor5 from "assets/5.svg";
 const ImagesCardSlide = () => {
   const cards = [
     {
       title: "التواصل الاجتماعي",
       description: "قسم يدير وسائل التواصل لنشر الثقافة وبناء ثقة العملاء.",
-      image: "https://placehold.co/136x136",
+      image: Victor1,
     },
     {
       title: "الإدارة المالية",
       description: "قسم يدير جميع الشؤون المالية لشركة إنجاز للاستقدام.",
-      image: "https://placehold.co/136x136",
+      image: Victor2,
     },
     {
       title: "تقنية المعلومات",
       description:
         "قسم مسؤول عن الحاسب الآلي، البرامج، الأجهزة، والشبكات بالشركة.",
-      image: "https://placehold.co/136x136",
+      image: Victor3,
     },
     {
       title: "الإدارة القانونية",
       description:
         "قسم يقدم الاستشارات القانونية ويحل الشكاوى وفق أنظمة المملكة.",
-      image: "https://placehold.co/136x136",
+      image:"",
     },
     {
       title: "الترجمة",
       description:
         "قسم الترجمة يقدم ترجمات دقيقة ومتخصصة حسب احتياجات الشركة.",
-      image: "https://placehold.co/136x136",
+      image: Victor5,
     },
     {
       title: "مراكز الاتصال",
       description:
         "مركز اتصالات ينسق الخدمات ويضمن الجودة والتطوير المستمر.",
-      image: "https://placehold.co/136x136",
+      image: Victor4,
     },
   ];
 
@@ -79,11 +83,10 @@ const ImagesCardSlide = () => {
       </div>
 
       {/* Swiper Slider */}
-      <div className="swiper-container mt-8 sm:mt-4 w-[80%] mx-auto md:me-0  md:ms-auto md:pe-5">
+      <div className="swiper-container mt-8 sm:mt-4 w-[80%] mx-auto ">
         <Swiper
           dir="ltr"
           spaceBetween={20}
-          
           slidesPerView={1}
           centeredSlides={true}
           navigation={{
@@ -97,7 +100,7 @@ const ImagesCardSlide = () => {
               slidesPerView: 1,
             },
             768: {
-              slidesPerView: 2.5,
+              slidesPerView: 3,
             },
             1024: {
               slidesPerView: 5,

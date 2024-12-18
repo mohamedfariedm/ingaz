@@ -1,5 +1,6 @@
 import ArrowDown from "Components/ArrowDown/ArrowDown";
 import "./SliderHeader.css";
+import { Link } from "react-router-dom";
 const SliderHeader = () => {
   return (
     <>
@@ -21,20 +22,20 @@ const SliderHeader = () => {
           <div className="info-banner relative z-1">
           <div className=" flex flex-col gap-6 items-center mx-auto my-0 px-4 sm:px-6 lg:px-8">
       {/* Title */}
-      <span className="flex w-full justify-center items-start text-center  text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-tight tracking-[-1.2px]">
+      <span className="flex w-full justify-center items-start text-center  text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-tight ">
         خبرة تضع الحلول بين يديك
       </span>
 
       {/* Description */}
-      <span className="flex w-full justify-center items-start text-center  text-base sm:text-lg md:text-xl font-normal text-white leading-relaxed">
+      <span className="flex w-full justify-center items-start text-center  text-base sm:text-lg md:text-xl font-normal text-white">
         نحن في إنجاز للاستقدام، نقدم لك خدمات استقدام متكاملة تجمع بين الكفاءة
         والجودة، مع تدريب احترافي للعمالة لضمان تلبية احتياجات الأفراد والأعمال
         في جميع أنحاء المملكة.
       </span>
     </div>
-  <button className="text-sm sm:text-base  font-normal text-white border-none relative whitespace-nowrap pointer flex pt-3 pr-12 pb-3 pl-12 gap-2 justify-center items-center rounded-full border border-white mx-auto my-8 w-16 h-6 sm:w-32 sm:h-10 ">
+  <Link to={"/contactus"} className="text-sm sm:text-base border  border-1  font-normal text-white  relative whitespace-nowrap pointer flex pt-3 pr-12 pb-3 pl-12 gap-2 justify-center items-center rounded-full border-white mx-auto my-8 w-16 h-6 sm:w-32 sm:h-10 hover:bg-[#0e4a79] ">
     تواصل معنا
-  </button>
+  </Link>
 
 <ArrowDown/>
           </div>

@@ -20,7 +20,7 @@
 
 .banner-main-area--1 .info-banner {
   width: 100%;
-  max-width: 750px;
+  max-width: 850px;
   text-align: center;
   height: 65vh;
   padding: 25px 15px;
@@ -44,7 +44,8 @@
 }
 
 .banner-main-area--1 .banner-one .overlay-bg::after {
-  background: #0000002e;
+  background: linear-gradient(to top, #0e4b7960, rgba(0, 0, 0, 0));
+  z-index: 1;
 }
 
 .banner-main-area--1 .info-banner .content-slide {

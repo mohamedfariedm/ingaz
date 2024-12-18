@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: '29LT_Bukra';
-  src: url(./assets/webFont/29ltbukraregular.ttf);
+  src: url(./assets/webFont/29LTBukra-Regular.otf);
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +23,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none !important;
-  font-family: 'Cairo', sans-serif;
+  font-family: '29LT_Bukra', sans-serif;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
