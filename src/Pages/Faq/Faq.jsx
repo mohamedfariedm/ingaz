@@ -23,7 +23,7 @@ const Faq = () => {
             <h1 className="text-4xl lg:text-5xl font-bold text-[#0e4a79] leading-snug">
               الأسئلة الأكثر شيوعاً
             </h1>
-            <p className="text-lg lg:text-xl text-[#667680] leading-relaxed lg:w-[50%] mx-auto">
+            <p className="text-lg lg:text-xl text-[#667680] leading-relaxed mx-auto">
               نحرص على توفير إجابات واضحة لأكثر الأسئلة شيوعاً حول خدماتنا، لتسهيل
               تجربتك وضمان فهمك الكامل لكل خطوة.
             </p>

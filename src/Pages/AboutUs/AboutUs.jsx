@@ -82,7 +82,7 @@ const AboutUs = () => {
 </div>
 </div>
 
-<div className="main-container w-full bg-[#fff] relative mx-auto my-0 px-16 py-8">
+<div className="main-container w-full bg-[#fff] relative mx-auto my-0 sm:px-16 py-8">
   {/* Vision and Mission Section */}
   <div className="flex flex-col items-center gap-6 text-center mt-12">
     <div className="flex flex-col gap-2">

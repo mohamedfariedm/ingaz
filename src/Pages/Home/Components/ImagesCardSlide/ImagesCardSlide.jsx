@@ -65,32 +65,26 @@ const ImagesCardSlide = () => {
           </span>
         </div>
         <div className="mt-5">
-          <div className="flex gap-5">
-            <div className="arrow-right swiper-prev flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
-              <FontAwesomeIcon
-                className="text-[#0e4a79]"
-                icon={faArrowRight}
-                size="lg"
-              />
+      <div className="flex gap-5">
+            <div className="group hover:bg-[#0e4a79] arrow-right swiper-prev flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7] ">
+                        <FontAwesomeIcon className="text-[#0e4a79] group-hover:text-white" icon={faArrowRight} size="lg" />
+              
             </div>
-            <div className="arrow-left swiper-next flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
-              <FontAwesomeIcon
-                className="text-[#0e4a79]"
-                icon={faArrowLeft}
-                size="lg"
-              />
+            <div className="group hover:bg-[#0e4a79] arrow-left swiper-next flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
+            <FontAwesomeIcon className="text-[#0e4a79] group-hover:text-white" icon={faArrowLeft} size="lg" />
+
             </div>
           </div>
-        </div>
+      </div>
       </div>
 
       {/* Swiper Slider */}
-      <div className="swiper-container mt-8 sm:mt-4 md:w-[80%]  md:ms-auto md:pe-5">
+      <div className="swiper-container mt-8 sm:mt-4 w-[80%] mx-auto md:me-0  md:ms-auto md:pe-5">
         <Swiper
           dir="ltr"
           spaceBetween={20}
           
-          slidesPerView={5}
+          slidesPerView={1}
           centeredSlides={true}
           navigation={{
             nextEl: ".arrow-right",

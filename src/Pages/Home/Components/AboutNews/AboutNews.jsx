@@ -21,12 +21,12 @@ const AboutNews = () => {
       </div>
 
       {/* News Section */}
-      <div className="flex flex-wrap justify-between mt-8">
+      <div className="flex flex-wrap gap-4 justify-between mt-8">
         {/* News Cards */}
         {[1, 2, 3].map((_, index) => (
           <div
             key={index}
-            className="flex flex-col sm:w-[390px]  overflow-hidden group relative "
+            className="flex flex-col sm:w-[390px] py-3  overflow-hidden group relative "
           >
               <div className="absolute inset-0  border-b-2 border-transparent">
     <div className="absolute top-[100%] -start-[100%] w-full h-1  bg-gradient-to-r from-[#0e4a79] via-[#0e4a79] to-[#0e4a79] group-hover:-translate-x-full transition-all duration-500"></div>

@@ -21,7 +21,7 @@ const ContactInformations = () => {
           نحن هنا لخدمتك والإجابة على جميع استفساراتك. فريقنا المتخصص جاهز
           لتقديم الدعم والمساعدة على مدار الساعة لضمان راحتك ورضاك.
         </p>
-        <button className="self-start mt-6 px-6 py-2 border border-[#fff] rounded-full text-[14px]">
+        <button className="self-start my-6 px-6 py-2 border border-[#fff] rounded-full text-[14px]">
           تواصل معنا
         </button>
       </div>

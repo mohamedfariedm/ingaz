@@ -32,11 +32,9 @@ const SliderHeader = () => {
         في جميع أنحاء المملكة.
       </span>
     </div>
-    <div className="flex pt-3 pr-12 pb-3 pl-12 gap-2 justify-center items-center rounded-full border border-white mx-auto my-8 w-16 h-6 sm:w-32 sm:h-10 ">
-  <button className="w-16 h-6 sm:w-24 sm:h-8 text-sm sm:text-base  font-normal text-white border-none relative whitespace-nowrap pointer">
+  <button className="text-sm sm:text-base  font-normal text-white border-none relative whitespace-nowrap pointer flex pt-3 pr-12 pb-3 pl-12 gap-2 justify-center items-center rounded-full border border-white mx-auto my-8 w-16 h-6 sm:w-32 sm:h-10 ">
     تواصل معنا
   </button>
-</div>
 
 <ArrowDown/>
           </div>

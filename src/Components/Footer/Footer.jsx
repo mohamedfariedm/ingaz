@@ -49,7 +49,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="سجل هنا بريدك الالكتروني"
-              className="w-[30rem] h-[3.375rem] px-4 rounded-full shadow-md text-sm text-gray-600"
+              className="w-[20rem] sm:w-[30rem] h-[3.375rem] px-4 rounded-full shadow-md text-sm text-gray-600"
             />
           <button className="bg-[#0e4a79] w-[7.5rem] h-[2.87rem] text-white text-sm rounded-full px-6 py-2 absolute end-1 top-1">
             اشترك الآن
@@ -60,12 +60,12 @@ const Footer = () => {
 
       {/* Footer Links and Rights Section */}
       <div className="flex flex-col gap-4 items-center w-full max-w-screen-xl">
-        <div className="flex flex-wrap justify-between items-center w-full border-t border-blue-600 pt-4">
+        <div className="flex flex-col gap-4 sm:flex-row justify-between items-center w-full border-t border-blue-600 pt-4">
 
 
 
 
-        <div className="flex flex-wrap gap-4 items-center text-white">
+        <div className="flex flex-wrap  gap-4 items-center text-white">
       {policies.map((policy, index) => (
         <Link
           key={index}

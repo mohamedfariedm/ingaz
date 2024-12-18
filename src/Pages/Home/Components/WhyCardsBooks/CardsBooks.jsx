@@ -17,7 +17,7 @@ const CardsBooks = () => {
       {/* Stats Cards Section */}
       <div className="flex flex-wrap gap-8 justify-center mt-16">
         {/* Card 1 */}
-        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
+        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/263x354)] bg-cover bg-no-repeat bg-center relative overflow-hidden rounded-[24px]">
           <div className="flex flex-col items-start gap-4 mt-6 ms-3 ">
             <span className="text-[40px] font-semibold text-[#fff]">1,120</span>
             <span className="text-[24px] font-semibold text-[#fff]">عقد مساند</span>
@@ -25,7 +25,7 @@ const CardsBooks = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/354x263)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
+        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/263x354)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
           <div className="flex flex-col items-start gap-4 mt-6 ms-3 ">
             <span className="text-[40px] font-semibold text-[#fff]">50,000</span>
             <span className="text-[24px] font-semibold text-[#fff]">وكلاء</span>
@@ -33,7 +33,7 @@ const CardsBooks = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
+        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/263x354)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
           <div className="flex flex-col items-start gap-4 mt-6 ms-3 ">
             <span className="text-[40px] font-semibold text-[#fff]">1,120</span>
             <span className="text-[24px] font-semibold text-[#fff]">تقييم عبر مساند</span>
@@ -41,7 +41,7 @@ const CardsBooks = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
+        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/263x354)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
           <div className="flex flex-col items-start gap-4 mt-6 ms-3 ">
             <span className="text-[40px] font-semibold text-[#fff]">50,000</span>
             <span className="text-[24px] font-semibold text-[#fff]">خدمة مناطق إدارية</span>
@@ -49,7 +49,7 @@ const CardsBooks = () => {
         </div>
 
         {/* Card 5 */}
-        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
+        <div className="w-[263px] h-[354px] bg-[url(https://placehold.co/263x354)] bg-cover bg-no-repeat relative overflow-hidden rounded-[24px]">
           <div className="flex flex-col items-start gap-4 mt-6 ms-3 ">
             <span className="text-[40px] font-semibold text-[#fff]">50,000</span>
             <span className="text-[24px] font-semibold text-[#fff]">خدمة عميل</span>

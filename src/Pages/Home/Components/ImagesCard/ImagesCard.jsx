@@ -34,12 +34,12 @@ const ImagesCard = () => {
       </div>
       <div className="mt-5">
       <div className="flex gap-5">
-            <div className="arrow-right swiper-prev flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7] ">
-                        <FontAwesomeIcon className="text-[#0e4a79]" icon={faArrowRight} size="lg" />
+            <div className="group hover:bg-[#0e4a79] arrow-right swiper-prev flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7] ">
+                        <FontAwesomeIcon className="text-[#0e4a79] group-hover:text-white" icon={faArrowRight} size="lg" />
               
             </div>
-            <div className="arrow-left swiper-next flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
-            <FontAwesomeIcon className="text-[#0e4a79]" icon={faArrowLeft} size="lg" />
+            <div className="group hover:bg-[#0e4a79] arrow-left swiper-next flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
+            <FontAwesomeIcon className="text-[#0e4a79] group-hover:text-white" icon={faArrowLeft} size="lg" />
 
             </div>
           </div>
@@ -47,11 +47,11 @@ const ImagesCard = () => {
       </div>
 
      {/* Swiper Slider */}
-     <div className="swiper-container mt-8 sm:mt-4">
+     <div className="swiper-container mt-8 px-2  sm:mt-4  ">
         <Swiper
         dir="ltr"
           spaceBetween={20} // Adjust space between cards
-          slidesPerView={3.5} // Show 3 full cards and half of the 4th
+          slidesPerView={1} // Show 3 full cards and half of the 4th
           centeredSlides={true} // Center the active slide
           navigation={{
             nextEl: ".arrow-right",
@@ -72,27 +72,27 @@ const ImagesCard = () => {
           }}
         >
           <SwiperSlide>
-            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat rounded-[24px] flex-nowrap justify-center items-end p-8">
+            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-center bg-no-repeat rounded-[24px] flex-nowrap justify-center items-end p-8">
               <span className="flex text-white text-[32px] font-bold">نقل خادمات</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat rounded-[24px] flex-nowrap justify-center items-end p-8">
+            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat bg-center rounded-[24px] flex-nowrap justify-center items-end p-8">
               <span className="flex text-white text-[32px] font-bold">استقدام سائقين</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat rounded-[24px] flex-nowrap justify-center items-end p-8">
+            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat bg-center rounded-[24px] flex-nowrap justify-center items-end p-8">
               <span className="flex text-white text-[32px] font-bold">استقدام عاملات</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat rounded-[24px] flex-nowrap justify-center items-end p-8">
+            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat bg-center rounded-[24px] flex-nowrap justify-center items-end p-8">
               <span className="flex text-white text-[32px] font-bold">خدماتنا</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat rounded-[24px] flex-nowrap justify-center items-end p-8">
+            <div className="flex w-full h-[312px] bg-[url(https://placehold.co/454x312)] bg-cover bg-no-repeat bg-center rounded-[24px] flex-nowrap justify-center items-end p-8">
               <span className="flex text-white text-[32px] font-bold">مناطق الاستقدام</span>
             </div>
           </SwiperSlide>

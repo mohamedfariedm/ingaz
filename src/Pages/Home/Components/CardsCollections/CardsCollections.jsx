@@ -1,9 +1,4 @@
 import { useState } from "react";
-import TitleSection from "Components/TitleSection/TitleSection";
-import CardCollection from "Components/Ui/CardCollection/CardCollection";
-import { cardCollection } from "./DataCollection";
-import PaginationPage from "Components/Pagination/Pagination";
-import { toast } from "react-toastify";
 import "./CardsCollection.css"
 
 const CardsCollections = () => {
@@ -35,7 +30,7 @@ const CardsCollections = () => {
     <span className="text-[16px] font-normal leading-[29px] text-[#0e4a79] tracking-[0.32px] text-right">
       رحلة العميل
     </span>
-    <span className="text-center lg:text-left text-[24px] lg:text-[30px] font-bold leading-[54.6px] text-[#0e4a79] tracking-[0.6px] whitespace-nowrap">
+    <span className="text-center lg:text-left text-[24px] lg:text-[30px] font-bold leading-[54.6px] text-[#0e4a79] tracking-[0.6px]">
       من طلب الخدمة إلى وصول العمالة
     </span>
   </div>
