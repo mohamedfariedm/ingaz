@@ -1,3 +1,6 @@
+import Vector from "assets/contactus.svg"
+import Vector1 from "assets/Icon.svg"
+import Vector2 from "assets/mail-02.svg"
 const ContactForm = () => {
 
   return (
@@ -72,17 +75,37 @@ const ContactForm = () => {
                 {/* Placeholder Image */}
                 <div className="w-full lg:w-[591px] h-[250px] bg-cover bg-center rounded-md">
           <img
-            src="https://placehold.co/591x250"
+            src={Vector}
             alt="Placeholder"
-            className="w-full h-full object-cover rounded-md"
+            className="w-[80%] h-full object-contain rounded-md"
           />
         </div>
         <div className="flex flex-col lg:flex-row">
+
+                  {/* Phone Section */}
+        <div className="flex flex-col items-center gap-4 text-center">
+          <div className="w-12 h-12 bg-[#0e4a79] rounded-full flex items-center justify-center">
+            <img
+              src={Vector1}
+              alt="Phone Icon"
+              className="w-6 h-6"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <span className="text-lg font-semibold text-[#1d1d1d]">
+              الاتصال الهاتفي
+            </span>
+            <span className="text-sm text-[#94969c] leading-6">
+              ساعات العمل: من الأحد إلى الخميس، من 9 صباحًا حتى 5 مساءً.
+            </span>
+          </div>
+        </div>
+        
         {/* Email Section */}
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="w-12 h-12 bg-[#0e4a79] rounded-full flex items-center justify-center">
             <img
-              src="https://placehold.co/24x24"
+              src={Vector2}
               alt="Email Icon"
               className="w-6 h-6"
             />
@@ -99,24 +122,7 @@ const ContactForm = () => {
 
 
 
-        {/* Phone Section */}
-        <div className="flex flex-col items-center gap-4 text-center">
-          <div className="w-12 h-12 bg-[#0e4a79] rounded-full flex items-center justify-center">
-            <img
-              src="https://placehold.co/24x24"
-              alt="Phone Icon"
-              className="w-6 h-6"
-            />
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="text-lg font-semibold text-[#1d1d1d]">
-              الاتصال الهاتفي
-            </span>
-            <span className="text-sm text-[#94969c] leading-6">
-              ساعات العمل: من الأحد إلى الخميس، من 9 صباحًا حتى 5 مساءً.
-            </span>
-          </div>
-        </div>
+
 
         </div>
       </div>

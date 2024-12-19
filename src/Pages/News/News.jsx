@@ -10,9 +10,9 @@ const News = () => {
        <HelmetInfo titlePage={"أخبارنا"} />
        <div className="mt-[85px]"/>
 
-    <div className=" w-[90%] flex bg-[#fff] mx-auto my-0 px-4 py-16 lg:px-16">
+    <div className=" w-[90%] flex gap-10 items-start bg-[#fff] mx-auto my-0 px-4 py-16 scale-90">
         {/* Blog Categories Section */}
-  <div className="flex flex-col gap-8 mt-8 w-[30%] lg:w-[280px] mx-auto">
+  <div className="flex flex-col gap-8  w-[30%] lg:w-[280px] mx-auto">
     <div className="flex items-center  border border-[#e7e7e7] rounded-[8px]">
       <span className="text-[#667680] px-2">
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,11 +34,11 @@ const News = () => {
     </div>
   </div>
 
-  <div className="flex flex-wrap gap-8 items-start justify-center w-full">
+  <div className="flex flex-wrap items-start justify-center w-full">
     {[...Array(6)].map((_, index) => (
           <div
           key={index}
-          className="flex flex-col gap-6 w-full p-3 sm:w-[48%] lg:w-[30%]  overflow-hidden group relative "
+          className="flex flex-col gap-6 w-full p-3 sm:w-[48%] lg:w-[33%]  overflow-hidden group relative "
         >
             <div className="absolute inset-0  border-b-2 border-transparent">
   <div className="absolute top-[100%] -start-[100%] w-full h-1  bg-gradient-to-r from-[#0e4a79] via-[#0e4a79] to-[#0e4a79] group-hover:-translate-x-full transition-all duration-500"></div>
@@ -48,7 +48,7 @@ const News = () => {
           <div
             className="h-[303px] bg-cover bg-center  transition-transform duration-300 group-hover:scale-110"
             style={{
-              backgroundImage: `url(https://placehold.co/454x303)`,
+              backgroundImage: `url(https://s3-alpha-sig.figma.com/img/3d98/2391/5e2ef5f9d7297897ebe55176aac90e5a?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CglWGWgqdJx0pKUqF7SLwsxEIxLCjGX7TMtzadywW6FaqFWWlFK9YXc6gqI6KvqWZBNvXTDM8NdR1vtPB~eYXHisAHO2279CMLbOfy3F~eSvmrtpvfMe4AA54RCdx9JmCC0xf4-fUD2w1Xkd40k~x3O24lF54E7rTsShF3UokAdtf4ITRfhoFO5oQoXhh-5ROpsGzwRppnTjea42vJbbJO4ZiyeacLO4Mwmppdc6okaF1WV5BXI8EpZLw5f3a9aR~v8Ibe9fWJTbM2Pm4XjxLQ7uow4JAGMhagiw8r70UzyVWuTtBzb1tm4kTnPs14pON3PlO0oo5Q3IkqFc6KZpLQ__)`,
             }}
           ></div>
           </div>

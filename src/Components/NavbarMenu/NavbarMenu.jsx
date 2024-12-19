@@ -1,53 +1,70 @@
 import logo from "../../assets/logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./NavbarMenu.css";
-import { useState } from "react";
 
 const NavbarMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const links = [
-    { name: "الرئيسية", href: "/" },
-    { name: "خدماتنا", href: "/partners" },
-    { name: "انجاز في ارقام", href: "/stats" },
-    { name: "رحلة العميل", href: "/journey" },
-    { name: "الشركاء", href: "/partners" },
-    { name: "الأقسام", href: "/partners" },
-    { name: "مناطق الاستقدام", href: "/partners" },
-    { name: "الشهادات", href: "/partners" },
-    { name: "أخبارنا", href: "/news" },
-    { name: "تواصل معنا", href: "/contactus" },
-    // { name: "الأسئلة الشائعة", href: "/faq" },
-    // { name: "من نحن", href: "/aboutus" },
+    { name: "الرئيسية", href: "/#main" },
+    { name: "خدماتنا", href: "/#services" },
+    { name: "انجاز في ارقام", href: "/#numbers" },
+    { name: "رحلة العميل", href: "/#trip" },
+    { name: "الشركاء", href: "/#partners" },
+    { name: "الأقسام", href: "/#categories" },
+    { name: "مناطق الاستقدام", href: "/#begin" },
+    { name: "الشهادات", href: "/#certifications" },
+    { name: "أخبارنا", href: "/#news" },
+    { name: "تواصل معنا", href: "/#contactus" },
   ];
 
+  // Scroll to hash
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  const isLinkActive = (href) => {
+    const { pathname, hash } = location;
+    if (href.includes("#")) {
+      const [basePath, hashValue] = href.split("#");
+      return pathname === basePath && hash === `#${hashValue}`;
+    }
+    return pathname === href;
+  };
+
   return (
-    <div className="fixed top-0  start-0 end-0 main-container flex  py-2 justify-around items-center bg-[rgba(255,255,255,0.3)] backdrop-blur-sm mx-auto z-40">
-      <div className=" flex justify-between px-2 w-full lg:w-auto   lg:justify-start items-center h-[70px] shrink-0 relative overflow-hidden z-[13]">
+    <div className="fixed top-0 start-0 end-0 main-container flex py-2 justify-around items-center bg-[rgba(255,255,255,0.3)] backdrop-blur-sm mx-auto z-40">
+      <div className="scale-90 flex justify-between px-2 w-full lg:w-auto lg:justify-start items-center h-[70px] shrink-0 relative overflow-hidden z-[13]">
         {/* Logo */}
-        <img
-          className=" md:h-[70px] object-contain"
-          src={logo}
-          alt="logo"
-        />
+        <Link to={"/#main"}>
+        
+        <img className="md:h-[70px] object-contain" src={logo} alt="logo" />
+        </Link>
         <span
           className="block lg:hidden p-2 cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span className="block w-6 h-[2px] bg-[#0e4a79] mb-[4px]"></span>
           <span className="block w-6 h-[2px] bg-[#0e4a79] mb-[4px]"></span>
-          <span className="block w-6 h-[2px] bg-[#0e4a79] "></span>
+          <span className="block w-6 h-[2px] bg-[#0e4a79]"></span>
         </span>
       </div>
-      <div className="hidden lg:flex  flex-col items-end">
+      <div className="hidden lg:flex flex-col items-end scale-90">
         <div className="flex flex-wrap gap-6 items-center w-full relative">
           {links.map((link) => (
             <span className="relative" key={link.name}>
               <NavLink
                 to={link.href}
-                className={({ isActive }) =>
+                className={() =>
                   `text-sm font-normal ${
-                    isActive
+                    isLinkActive(link.href)
                       ? "text-[#0e4a79] nav-link-active font-semibold"
                       : "text-[#667680]"
                   }`
@@ -69,7 +86,7 @@ const NavbarMenu = () => {
                   to={link.href}
                   className={({ isActive }) =>
                     `block text-sm font-normal ${
-                      isActive
+                      isLinkActive(link.href)
                         ? "text-[#0e4a79] nav-link-active"
                         : "text-[#667680]"
                     }`

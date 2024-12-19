@@ -50,7 +50,9 @@ const ImagesCardSlide = () => {
   ];
 
   return (
-    <div className="main-container h-auto my-0 py-16 w-full relative">
+    <>
+    <div id="categories"></div>
+    <div className="main-container h-auto  py-16 w-full relative">
       {/* Content Section */}
       <div className="w-[80%] mx-auto flex flex-col items-center md:flex-row md:items-end justify-between mb-10">
         <div className="flex flex-col gap-[24px] items-start z-[3] mt-16 sm:mt-8 md:w-[60%]">
@@ -128,6 +130,8 @@ const ImagesCardSlide = () => {
         </Swiper>
       </div>
     </div>
+    
+    </>
   );
 };
 

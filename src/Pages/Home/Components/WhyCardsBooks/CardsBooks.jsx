@@ -7,7 +7,9 @@ import Victor5 from "assets/image5.svg";
 
 const CardsBooks = () => {
   return (
-    <div className="main-container w-full h-auto bg-[#fff] relative mx-auto my-0">
+    <>
+    <div id="numbers" ></div>
+    <div className="main-container w-full h-auto bg-[#fff] relative mx-auto">
       {/* Title Section */}
       <div className="flex flex-col items-center gap-4 w-full max-w-screen-lg mx-auto mt-[95.813px]">
         <span className=" text-[30px] font-bold leading-[54.6px] text-[#0e4a79] tracking-[0.6px] text-center">
@@ -82,6 +84,7 @@ const CardsBooks = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

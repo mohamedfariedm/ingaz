@@ -2,7 +2,9 @@ import "./Explore.css"
 
 const ExploreCountries = () => {
   return (
-    <div className=" w-full h-auto bg-[#fbfbfb] flex flex-col items-center py-8 px-4">
+    <>
+    <div id="partners" ></div>
+    <div className=" w-full h-auto bg-[#fbfbfb] flex flex-col items-center py-24  px-4">
       {/* Title Section */}
       <div className="text-center mb-8">
         <span className="text-[30px] font-bold leading-[45.5px] text-[#0e4a79] block">
@@ -11,7 +13,7 @@ const ExploreCountries = () => {
       </div>
 
       {/* Partners Grid */}
-      <div className="flex flex-wrap justify-center gap-6 w-full max-w-[1264px]">
+      <div className="flex flex-wrap justify-center gap-8 w-full max-w-[1264px]">
         {/* Partner Card */}
         {[
           "https://s3-alpha-sig.figma.com/img/5f86/0cdf/d7abede6d5a7e67a8cbbc9f6602154f7?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A-JJEu3U1FpQpBJG276jXXy0om9XpVjZb7xUJFuVLUHztnf9GBGpBVsj6DlU4Sa0Gxzc4MFsTN-wpdGh2XbeX6-hczIYS0MAICJim2rkXvN2DJLGpyPejVQVEdUq9J1bVL4Jw2QVuXGUCE5wbQ~NQne2KMl7Uh-7LPlL5TyyxdSeh8h1bUG6as14Ym80g~izToTlR~cWRiJZpzRbTzd6e5PmbI7E9br1RJpeykbltEBckRWMCiWZrOBbKCI3eoX~Oz0uirNGcL5VdK85TcUro-C~-tcvepXmjYzH2CIpE708RxfpZZfRUUNJi7VvLN1bNewqH1UH5d5bwnSGUTJoHQ__",
@@ -37,6 +39,8 @@ const ExploreCountries = () => {
         ))}
       </div>
     </div>
+    
+    </>
   );
 };
 

@@ -10,7 +10,8 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const ImagesCard = () => {
 
   return (<>
-<div className="main-container h-auto bg -[#fbfbfb] my-0 w-full  relative ">
+  <div id="services" className=" "></div>
+<div  className="main-container h-auto bg -[#fbfbfb] w-full mt-[85px] relative ">
       {/* Background Images */}
       
       {/* Content Section */}

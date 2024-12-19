@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const SliderHeader = () => {
   return (
     <>
+    <div id="main"></div>
       <div className="banner-main-area--1 h-[100vh]">
         <div className="banner-one section-padding bg-image h-[100vh]">
           <div className="video-bg overlay-bg">

@@ -1,15 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Victor from "assets/vectormap.svg";
+import Victor from "assets/Layer_1.svg";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
 import { faPhoenixFramework } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot, faMapLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 
 
 const ContactInformations = () => {
 
-  return (
-    <div className="main-container w-[80%] bg-[#fff] relative mx-auto my-0 p-4 md:p-8">
+  return (<>
+    <div id="contactus"></div>
+    <div className="main-container w-[80%] bg-[#fff] relative mx-auto my-5 p-4 md:py-16">
     {/* Main Section */}
     <div className="w-full bg-[#0e4a79] rounded-[32px] flex flex-col lg:flex-row justify-between items-center p-8">
             {/* Text Section */}
@@ -21,15 +23,15 @@ const ContactInformations = () => {
           نحن هنا لخدمتك والإجابة على جميع استفساراتك. فريقنا المتخصص جاهز
           لتقديم الدعم والمساعدة على مدار الساعة لضمان راحتك ورضاك.
         </p>
-        <button className="self-start my-6 px-6 py-2 border border-[#fff] rounded-full text-[14px]">
+        <Link to={"/contactus"} className="self-start my-6 px-6 py-2 border border-[#fff] rounded-full  hover:bg-white hover:text-[#0e4a79] hover:scale-110  text-[14px] font-normal transition-all duration-500">
           تواصل معنا
-        </button>
+        </Link>
       </div>
       
       {/* Placeholder Image */}
       <div className="w-[258px] h-[311px] bg-cover bg-center rounded-[16px] mb-6 lg:mb-0 lg:ml-8"
         style={{
-          backgroundImage: `url(https://placehold.co/258x311)`,
+          backgroundImage: `url(${Victor})`,
         }}
       />
 
@@ -95,6 +97,8 @@ const ContactInformations = () => {
       </div>
     </div>
   </div>
+  
+  </>
   );
 };
 

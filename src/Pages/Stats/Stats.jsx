@@ -16,10 +16,15 @@ const Stats = () => {
         {/* Title Section */}
         <div className="text-center flex flex-col gap-6">
           <span className="text-lg font-medium text-[#0e4a79]">شهادة</span>
-          <h1 className="text-4xl lg:text-5xl font-bold text-[#0e4a79] leading-snug">
+          <h1
+                    style={{lineHeight:"87.36px"}}
+
+          className="text-4xl lg:text-5xl font-bold text-[#0e4a79] leading-snug">
             رحلة التميز في توفير الكوادر البشرية لتلبية احتياجات الأفراد والأعمال في المملكة
           </h1>
-          <p className="text-lg lg:text-xl text-[#667680] leading-relaxed">
+          <p
+          style={{lineHeight:"32.76px"}}
+          className="text-lg lg:text-xl  text-[#667680] leading-relaxed">
             منذ تأسيسها في عام 2015، أصبحت شركة إنجاز للاستقدام إحدى أبرز شركات مجموعة إنجاز، التي تفخر بتقديم حلول
             شاملة ومتكاملة في مجال استقدام العمالة المنزلية والمهنية من مختلف الجنسيات. تعمل إنجاز برؤية واضحة تواكب
             رؤية المملكة 2030، حيث تلتزم بتقديم خدمات عالية الجودة تسهم في بناء حياة مستدامة ومتميزة للمواطنين

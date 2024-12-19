@@ -20,7 +20,9 @@ const CardsCollections = () => {
   };
 
   return (
-    <div className="main-container h-auto bg-[#fbfbfb] relative mx-auto mt-16 py-16 w-full">
+    <>
+    <div id="trip"/>
+    <div className="main-container h-auto bg-[#fbfbfb] relative mx-auto  py-16 w-full ">
       <div className="w-[80%] mx-auto">
 
       {/* Title Section */}
@@ -101,6 +103,9 @@ const CardsCollections = () => {
 
       </div>
     </div>
+    
+    
+    </>
   );
 }
 

@@ -68,7 +68,9 @@ const BannerHome = () => {
   ];
 
   return (
-    <div className="main-container w-full bg-[#fbfbfb] py-16 relative mx-auto my-0">
+    <>
+    <div id="begin"></div>
+    <div className="main-container w-full bg-[#fbfbfb] py-20 relative mx-auto my-0">
       <div className="flex flex-col items-center px-4">
         <h1 className="text-[30px] font-bold leading-[54.6px] text-[#0e4a79] text-center pb-16">
           مناطق الاستقدام و أرقام المترجمين
@@ -116,6 +118,7 @@ const BannerHome = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
