@@ -51,7 +51,7 @@ const AboutNews = () => {
         </div>
 
         {/* News Section */}
-        <div className="flex flex-wrap gap-4 justify-between mt-8">
+        <div className="flex flex-wrap md:flex-nowrap gap-4 justify-between mt-8">
           {/* News Cards */}
           {newsData.map((news, index) => (
             <Link

@@ -34,7 +34,7 @@ const SliderHeader = () => {
         في جميع أنحاء المملكة.
       </span>
     </div>
-  <Link to={"/contactus"} className="text-sm sm:text-base border  border-1  font-normal text-white  relative whitespace-nowrap pointer flex pt-3 pr-12 pb-3 pl-12 gap-2 justify-center items-center rounded-full border-white mx-auto my-8 w-16 h-6 sm:w-32 sm:h-10 hover:bg-[#0e4a79] ">
+  <Link to={"/contactus"} className="text-sm sm:text-base border  border-1  font-normal text-white  relative whitespace-nowrap pointer flex pt-3 pr-12 pb-3 pl-12 gap-2 justify-center items-center rounded-full border-white mx-auto my-8 w-16 h-6 sm:w-32 sm:h-10 hover:bg-[#0e4a79] hover:border-none transition-transform duration-300 hover:scale-110 ">
     تواصل معنا
   </Link>
 

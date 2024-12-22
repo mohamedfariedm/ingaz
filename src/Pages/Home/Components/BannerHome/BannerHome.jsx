@@ -80,7 +80,7 @@ const BannerHome = () => {
             {countries.map((country, index) => (
               <div
                 key={index}
-                className="relative w-full h-[216px] sm:w-[335px] border rounded-[16px] hover:bg-white flex flex-col items-center justify-center bg-[linear-gradient(45deg,transparent_25%,rgba(0,128,0,.3)_30%,rgba(0,128,0,.3)_30%,transparent_25%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] hover:shadow-lg transition-[background-position_2s_ease-in-out] hover:bg-[position:100%_100%,100%_0] hover:duration-[1000ms]"
+                className="relative z-10 w-full h-[216px] sm:w-[300px] border rounded-[16px] hover:bg-white flex flex-col items-center justify-center bg-[linear-gradient(45deg,transparent_25%,rgba(0,128,0,.3)_30%,rgba(0,128,0,.3)_30%,transparent_25%)] bg-[length:250%_250%,100%_100%] bg-[position:-100%_0,0_0] hover:shadow-lg transition-[background-position_2s_ease-in-out] hover:bg-[position:100%_100%,100%_0] hover:duration-[1000ms]"
               >
                 {/* Top Icon */}
                 <div
@@ -113,7 +113,7 @@ const BannerHome = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${Victor})` }}
-            className="w-full h-[764px] bg-cover bg-no-repeat absolute top-0 left-0 -z-10"
+            className="w-full h-[764px] bg-cover bg-no-repeat absolute top-0 left-0 z-1"
           />
         </div>
       </div>
