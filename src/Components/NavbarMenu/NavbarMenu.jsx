@@ -5,22 +5,23 @@ import "./NavbarMenu.css";
 
 const NavbarMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState(""); // Track the active section
   const location = useLocation();
 
   const links = [
-    { name: "الرئيسية", href: "/#main" },
-    { name: "خدماتنا", href: "/#services" },
-    { name: "انجاز في ارقام", href: "/#numbers" },
-    { name: "رحلة العميل", href: "/#trip" },
-    { name: "الشركاء", href: "/#partners" },
-    { name: "الأقسام", href: "/#categories" },
-    { name: "مناطق الاستقدام", href: "/#begin" },
-    { name: "الشهادات", href: "/#certifications" },
-    { name: "أخبارنا", href: "/#news" },
-    { name: "تواصل معنا", href: "/#contactus" },
+    { name: "الرئيسية", href: "/#main", id: "main" },
+    { name: "خدماتنا", href: "/#services", id: "services" },
+    { name: "انجاز في ارقام", href: "/#numbers", id: "numbers" },
+    { name: "رحلة العميل", href: "/#trip", id: "trip" },
+    { name: "الشركاء", href: "/#partners", id: "partners" },
+    { name: "الأقسام", href: "/#categories", id: "categories" },
+    { name: "مناطق الاستقدام", href: "/#begin", id: "begin" },
+    { name: "الشهادات", href: "/#certifications", id: "certifications" },
+    { name: "أخبارنا", href: "/#news", id: "news" },
+    { name: "تواصل معنا", href: "/#contactus", id: "contactus" },
   ];
 
-  // Scroll to hash
+  // Scroll to hash on initial load
   useEffect(() => {
     if (location.hash) {
       const element = document.getElementById(location.hash.slice(1));
@@ -30,13 +31,53 @@ const NavbarMenu = () => {
     }
   }, [location]);
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.6, // Adjust visibility threshold
+    };
+
+    const observerCallback = (entries) => {
+      let mostVisibleSection = null;
+      let maxIntersectionRatio = 0;
+
+      // Find the most visible section
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio > maxIntersectionRatio) {
+          mostVisibleSection = entry.target.id;
+          maxIntersectionRatio = entry.intersectionRatio;
+        }
+      });
+
+      // Update active section
+      if (mostVisibleSection && mostVisibleSection !== activeSection) {
+        setActiveSection(mostVisibleSection);
+
+        // Update URL
+        const newUrl = `/#${mostVisibleSection}`;
+        if (window.location.hash !== newUrl) {
+          window.history.pushState(null, "", newUrl);
+        }
+      }
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observe all sections
+    links.forEach((link) => {
+      const section = document.getElementById(link.id);
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect(); // Cleanup observer on unmount
+    };
+  }, [links, activeSection]);
+
   const isLinkActive = (href) => {
-    const { pathname, hash } = location;
-    if (href.includes("#")) {
-      const [basePath, hashValue] = href.split("#");
-      return pathname === basePath && hash === `#${hashValue}`;
-    }
-    return pathname === href;
+    const id = href.split("#")[1]; // Extract id from href
+    return activeSection === id;
   };
 
   return (
@@ -44,8 +85,7 @@ const NavbarMenu = () => {
       <div className="scale-90 flex justify-between px-2 w-full lg:w-auto lg:justify-start items-center h-[70px] shrink-0 relative overflow-hidden z-[13]">
         {/* Logo */}
         <Link to={"/#main"}>
-        
-        <img className="md:h-[70px] object-contain" src={logo} alt="logo" />
+          <img className="md:h-[70px] object-contain" src={logo} alt="logo" />
         </Link>
         <span
           className="block lg:hidden p-2 cursor-pointer"
@@ -84,7 +124,7 @@ const NavbarMenu = () => {
               <li key={link.name}>
                 <NavLink
                   to={link.href}
-                  className={({ isActive }) =>
+                  className={() =>
                     `block text-sm font-normal ${
                       isLinkActive(link.href)
                         ? "text-[#0e4a79] nav-link-active"

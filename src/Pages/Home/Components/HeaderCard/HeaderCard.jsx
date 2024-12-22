@@ -4,7 +4,7 @@ import Victor from "assets/Vector.svg";
 const HeaderCard = () => {
 
   return (
-    <div className=" w-[80%]  relative mx-auto"
+    <div className=" w-[90%]  relative mx-auto scale-95 "
         // style={
     //   {
     //     backgroundImage:`url(${Victor})`,
@@ -16,20 +16,20 @@ const HeaderCard = () => {
     >
       {/* Background Images */}
       <div className="pt-20">
-<img className="relative w-[100%] xl:absolute xl:top-[100px]  xl:-end-12 xl:w-[75%]"  src={Victor} alt="" />
+<img className="relative w-[100%] xl:absolute xl:bottom-[10%]  xl:-end-1 xl:w-[75%]"  src={Victor} alt="" />
       {/* Content Section */}
       <div className=" w-full xl:w-[50%] py-10">
       <div className="flex flex-col gap-8  items-start flex-nowrap">
         <div className="flex flex-col gap-[4px] items-start self-stretch shrink-0 flex-nowrap relative z-[4]">
-          <span className=" text-[16px] font-normal leading-[29px] text-[#0e4a79]">
+          <span className=" text-[16px] font-normal leading-[29px] text-[#0e4a79] text_small_Bukra">
             من نحن
           </span>
-          <span className="flex  text-[30px] font-bold leading-[54.6px] text-[#0e4a79]  ">
+          <span className="flex  text-[25px] text_bold_Bukra  leading-[54.6px] text-[#0e4a79] w-[70%]  ">
             رحلة التميز في توفير الكوادر البشرية لتلبية احتياجات الأفراد
             والأعمال في المملكة
           </span>
         </div>
-        <span className="flex  text-[16px] font-normal leading-[29.12px] text-[#667680]">
+        <span className="flex  font-normal text-sm leading-[29px] text_small_Bukra text-[#667680] w-[79%]">
           منذ تأسيسها في عام 2015، أصبحت شركة إنجاز للاستقدام إحدى أبرز شركات
           مجموعة إنجاز، التي تفخر بتقديم حلول شاملة ومتكاملة في مجال استقدام
           العمالة المنزلية والمهنية من مختلف الجنسيات. تعمل إنجاز برؤية واضحة
@@ -42,6 +42,7 @@ const HeaderCard = () => {
           إقرأ المزيد
         </span>
       </Link>
+
       </div>
 
       </div>
