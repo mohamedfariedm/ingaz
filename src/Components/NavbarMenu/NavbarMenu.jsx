@@ -66,7 +66,7 @@ const NavbarMenu = () => {
                   `text-sm font-normal ${
                     isLinkActive(link.href)
                       ? "text-[#0e4a79] nav-link-active font-semibold"
-                      : "text-[#667680]"
+                      : "text-[#667680] font-semibold"
                   }`
                 }
               >
