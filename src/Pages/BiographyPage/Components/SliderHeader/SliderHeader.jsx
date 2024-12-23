@@ -17,24 +17,26 @@ const SliderHeader = () => {
               playsInline=""
               preload="auto"
             >
-              <source src="https://s3-figma-videos-production-sig.figma.com/video/1252915703189651761/TEAM/bc1a/30a5/-ace5-4ced-8f63-278116711a10?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X8vTz0uT4RAy0k~ydsvVokxay7YUV40wvCyxCfGq6Xupcl9AKC7lHWc3VsLAIIE7pLHESCpXowsD9Uji4DZTAopXcQEkuLhJOEENnjNcfNCjYWgYiWtPKN5uSmlVku~V5YlzYEA8wVjldtaly8IGHLhVlI-kA2Q5pdy2mgRp4aipWGRAF5JjbgzlufMgAY8vtef3KBUDJxfhNEtxi97wH5a19Rv4co-rkKfuf-aM2~Vhb86CIESoiGedP-~YhzfJYCQSeGB9jOsuqwEvzKEVR0xxjXZSmuQGO0zi0JvyBNpUL~dDEUsIHSi5qasXQgC5y9Lfwo~OC6oeqfqAttFTIw__" type="video/mp4" />
+              <source src="https://s3-figma-videos-production-sig.figma.com/video/1252915703189651761/TEAM/bc1a/30a5/-ace5-4ced-8f63-278116711a10?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OwZhfbxT4Gc4F3eOzNQcwTplKk5rzQOGY0ZqBibUF2AZwagwaWK9895xf656Rl6pvdjfAo37MyptFm2Rw3EbxzvS5fL7KFVFDTBwEmYGDhSIqU-5o8o8A80lJsbxbWzI~IrEr~y5B~X1jISd0zEMim3z-QB4Kchtj8yqGw-Eh5acCbLeRalDHazPjtTBhq-3-A37VHggqvx56upEH86duva3Tr02D8Dx8C6DSKPx~obaxcsCWf8N9qh4YDQVT5HXggkhdTzMvmoZ7-u4Viqxgwm~zo~OIFAClrLIkPWvWH7yXqiDlVPo4Ratb7cp63SW15yrJEgE9iIzQ2W5rlDIag__" type="video/mp4" />
             </video>
           </div>
-          <div className="info-banner relative z-1">
-          <div className=" flex flex-col gap-6 items-center mx-auto my-0 px-4 sm:px-6 lg:px-8">
+          <div className="info-banner relative z-1 scale-[85%] flex flex-col gap-6 items-end ">
+          <div className=" flex flex-col gap-6 items-center mx-auto my-0 ">
       {/* Title */}
-      <span className="flex w-full justify-center items-start text-center  text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-tight ">
+      <span className="flex w-full text_bold_Bukra justify-center items-start text-center  text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-tight ">
         خبرة تضع الحلول بين يديك
       </span>
 
       {/* Description */}
-      <span className="flex w-full justify-center items-start text-center  text-base sm:text-lg md:text-xl font-normal text-white">
+      <span className="flex w-full justify-center text_small_Bukra leading-[29px] pt-4 items-start text-center  text-[1.1rem]  font-normal text-white">
         نحن في إنجاز للاستقدام، نقدم لك خدمات استقدام متكاملة تجمع بين الكفاءة
-        والجودة، مع تدريب احترافي للعمالة لضمان تلبية احتياجات الأفراد والأعمال
+        والجودة، مع
+        <br/>
+         تدريب احترافي للعمالة لضمان تلبية احتياجات الأفراد والأعمال
         في جميع أنحاء المملكة.
       </span>
     </div>
-  <Link to={"/contactus"} className="text-sm sm:text-base border  border-1  font-normal text-white  relative whitespace-nowrap pointer flex pt-3 pr-12 pb-3 pl-12 gap-2 justify-center items-center rounded-full border-white mx-auto my-8 w-16 h-6 sm:w-32 sm:h-10 hover:bg-[#0e4a79] hover:border-none transition-transform duration-300 hover:scale-110 ">
+  <Link to={"/contactus"} className=" border  border-1 text_small_Bukra  font-normal text-white  relative whitespace-nowrap pointer flex px-12 py-3 gap-2 justify-center items-center rounded-full border-white mx-auto my-5  hover:bg-[#0e4a79] hover:border-none transition-transform duration-300 hover:scale-90 ">
     تواصل معنا
   </Link>
 

@@ -23,40 +23,40 @@ const CardsCollections = () => {
     <>
     <div id="trip"/>
     <div className="main-container h-auto bg-[#fbfbfb] relative mx-auto  py-16 w-full ">
-      <div className="w-[80%] mx-auto">
+      <div className="w-[90%] scale-[95%] mx-auto">
 
       {/* Title Section */}
-      <div className="flex flex-col lg:flex-row  gap-6 lg:gap-[204px] justify-center items-center relative mx-auto py-8 px-4 w-full ">
+      <div className="flex flex-col lg:flex-row gap-20  justify-center items-center relative mx-auto py-8 px-4 w-full ">
   {/* Left Section */}
-  <div className="flex w-full lg:w-[60%] flex-col gap-2 lg:gap-[4px] items-start flex-nowrap relative z-1">
-    <span className="text-[16px] font-normal leading-[29px] text-[#0e4a79] tracking-[0.32px] text-right">
+  <div className="flex w-full  flex-col gap-2 lg:gap-[4px] items-start flex-nowrap relative z-1">
+    <span className="text_small_Bukra text-[#0e4a79]  text-right">
       رحلة العميل
     </span>
-    <span className="text-center lg:text-right text-[24px] lg:text-[30px] font-bold leading-[54.6px] text-[#0e4a79] tracking-[0.6px]">
+    <span className="text-center lg:text-right text-[28px] text_bold_Bukra leading-[54.6px] text-[#0e4a79]  tracking-[0.5px]">
       من طلب الخدمة إلى وصول العمالة
     </span>
   </div>
 
   {/* Right Section */}
-  <span className="text-[16px] font-normal leading-[29.12px] text-[#667680] tracking-[0.32px] text-right w-full lg:w-[714px]">
+  <span className="text_small_Bukra leading-[29.12px] text-[#667680] text-[1rem] text-right w-full">
     في إنجاز، نضمن لك تجربة سلسة تبدأ من تقديم الطلب وحتى وصول العمالة المؤهلة إلى
     باب منزلك. مع إجراءات ميسرة، تدريب احترافي
   </span>
 </div>
 
       {/* Content Section */}
-      <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mt-8 mx-auto">
+      <div className="scale-[98%] scale-y-95 flex flex-col lg:flex-row justify-between items-start gap-24 mt-8 mx-auto">
                 {/* Right Image Section */}
                 <div className="relative w-full lg:w-1/2 h-auto flex justify-center">
   {/* Image with shadow as a border-like box */}
   <div
-    className="absolute  rounded-[24px] w-full h-full max-w-[693px] max-h-[588px] shadow-box"
+    className="absolute  rounded-[24px] w-[650px] h-full max-w-[693px] max-h-[588px] shadow-box"
   ></div>
 
   <img
     src={steps.find((step) => step.id === activeStep)?.image}
     alt={`Step ${activeStep}`}
-    className="relative rounded-[24px] w-full max-w-[693px] h-[588px] object-cover"
+    className="relative rounded-[24px] w-[650px] xl:w-[650px] max-w-[693px] h-[588px] object-none bg-left-bottom"
   />
 
   {/* Overlay with full gradient */}
@@ -75,7 +75,7 @@ const CardsCollections = () => {
         
         
         {/* Left Buttons Section */}
-        <div className="flex flex-col gap-10 items-start w-full lg:w-1/2">
+        <div className=" flex flex-col gap-10 items-start w-full lg:w-1/2">
           {steps.map((step) => (
             <div key={step.id} className="flex items-center gap-6">
                             <div
@@ -86,7 +86,7 @@ const CardsCollections = () => {
                 <span className="text-[24px] font-bold">{step.id}</span>
               </div>
               <button
-                className={`flex-1 px-4 py-4 rounded-[16px] w-full md:w-[501px] text-start ${
+                className={`flex-1 px-8 py-5 font-bold text-[1rem] rounded-[16px] w-full md:w-[501px] text-start ${
                   activeStep === step.id ? "bg-[#0e4a79] text-white" : "bg-[#e7edf2] text-[#0e4a79]"
                 } font-medium`}
                 onClick={() => handleStepClick(step.id)}

@@ -4,7 +4,7 @@ import Victor from "assets/Vector.svg";
 const HeaderCard = () => {
 
   return (
-    <div className=" w-[90%]  relative mx-auto scale-95 "
+    <div className=" w-[90%]  relative mx-auto scale-[98%] "
         // style={
     //   {
     //     backgroundImage:`url(${Victor})`,
@@ -16,20 +16,20 @@ const HeaderCard = () => {
     >
       {/* Background Images */}
       <div className="pt-20">
-<img className="relative w-[100%] xl:absolute xl:bottom-[10%]  xl:-end-1 xl:w-[75%]"  src={Victor} alt="" />
+<img className="relative w-[100%] xl:absolute xl:bottom-[10%]  xl:end-10 xl:w-[69%]"  src={Victor} alt="" />
       {/* Content Section */}
-      <div className=" w-full xl:w-[50%] py-10">
-      <div className="flex flex-col gap-8  items-start flex-nowrap">
+      <div className=" w-full xl:w-[50%] py-10 xl:ms-8">
+      <div className="flex flex-col gap-5  items-start flex-nowrap">
         <div className="flex flex-col gap-[4px] items-start self-stretch shrink-0 flex-nowrap relative z-[4]">
           <span className=" text-[16px] font-normal leading-[29px] text-[#0e4a79] text_small_Bukra">
             من نحن
           </span>
-          <span className="flex  text-[25px] text_bold_Bukra  leading-[54.6px] text-[#0e4a79] w-[70%]  ">
+          <span className="flex  text-[28px] text_bold_Bukra  leading-[54.6px] text-[#0e4a79] w-[80%]  ">
             رحلة التميز في توفير الكوادر البشرية لتلبية احتياجات الأفراد
             والأعمال في المملكة
           </span>
         </div>
-        <span className="flex  font-normal text-sm leading-[29px] text_small_Bukra text-[#667680] w-[79%]">
+        <span className="flex  font-medium text-[1rem] leading-[25px] text_small_Bukra text-[#667680] w-[85%]">
           منذ تأسيسها في عام 2015، أصبحت شركة إنجاز للاستقدام إحدى أبرز شركات
           مجموعة إنجاز، التي تفخر بتقديم حلول شاملة ومتكاملة في مجال استقدام
           العمالة المنزلية والمهنية من مختلف الجنسيات. تعمل إنجاز برؤية واضحة
@@ -37,11 +37,14 @@ const HeaderCard = () => {
           بناء حياة مستدامة ومتميزة للمواطنين والمقيمين في جميع أنحاء المملكة.
         </span>
       </div>
-      <Link to={"/aboutus"} className="flex w-[159px] h-[49px] pt-[12px] pr-[49px] pb-[12px] pl-[49px] gap-[8px] justify-center items-center flex-nowrap rounded-[999px] border-solid border border-[#0e4a79] hover:bg-[#0e4a79] hover:text-white hover:border-white pointer mt-16">
-        <span  className="flex w-[61px] h-[25px] justify-center items-start shrink-0 basis-auto  text-[14px] font-normal leading-[25px]  relative text-center whitespace-nowrap z-[9] ">
+      <div className="flex"> 
+      <Link to={"/aboutus"} className="flex   px-10 py-2 gap-[8px] justify-center items-center rounded-[999px] border-solid border border-[#0e4a79] group hover:bg-[#0e4a79] hover:text-white hover:border-white hover:scale-90 transition-transform duration-300 pointer mt-16">
+        <span  className="flex justify-center text_small_Bukra  font-normal items-start shrink-0 basis-auto  text-[14px] text-[#0e4a79] group-hover:text-white leading-[25px]  relative text-center whitespace-nowrap z-[9] ">
           إقرأ المزيد
         </span>
       </Link>
+
+      </div>
 
       </div>
 

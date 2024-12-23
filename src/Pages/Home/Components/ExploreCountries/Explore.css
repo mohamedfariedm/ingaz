@@ -4,7 +4,7 @@
     transition: transform .3s ease-in-out;
   }
   
-  .card::before {
+  .card:hover::before {
     content: "";
     position: absolute;
     inset: 0;
