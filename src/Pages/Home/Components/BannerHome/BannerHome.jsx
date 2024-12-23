@@ -72,7 +72,7 @@ const BannerHome = () => {
     <div id="begin"></div>
     <div className="main-container w-full bg-[#fbfbfb] py-20 relative mx-auto my-0">
       <div className="flex flex-col items-center px-4">
-        <h1 className="text-[30px] font-bold leading-[54.6px] text-[#0e4a79] text-center pb-16">
+        <h1 className="text-[27px] font-bold text_bold_Bukra leading-[54.6px] text-[#0e4a79] text-center pb-16">
           مناطق الاستقدام و أرقام المترجمين
         </h1>
         <div className="relative w-full mt-10 z-2">
@@ -96,7 +96,7 @@ const BannerHome = () => {
                   <span className="text-[20px] font-bold text-[#000] text-center">
                     {country.title}
                   </span>
-                  <span className="text-[12px] text-[#667680] text-center">
+                  <span className="text-[12px] text-[#667680] text-center ">
                     {country.description}
                   </span>
                 </div>
@@ -106,7 +106,7 @@ const BannerHome = () => {
                   <span className="flex items-center absolute translate-x-[100px] transition-transform duration-500 ease-in-out group-hover:translate-x-[35px]">
                     <FontAwesomeIcon icon={faPhone} />
                   </span>
-                  <span className="relative z-10">تواصل</span>
+                  <span className="relative z-10 text-[.8rem] text_small_Bukra">تواصل</span>
                 </button>
               </div>
             ))}

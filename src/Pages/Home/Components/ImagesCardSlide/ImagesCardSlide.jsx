@@ -52,19 +52,19 @@ const ImagesCardSlide = () => {
   return (
     <>
     <div id="categories"></div>
-    <div className="main-container h-auto  py-16 w-full relative">
+    <div className="scale-95 main-container h-auto  py-16 w-full relative">
       {/* Content Section */}
-      <div className="w-[80%] mx-auto flex flex-col items-center md:flex-row md:items-end justify-between mb-10">
+      <div className="w-[88%] mx-auto flex flex-col items-center md:flex-row md:items-end justify-between mb-10">
         <div className="flex flex-col gap-[24px] items-start z-[3] mt-16 sm:mt-8 md:w-[60%]">
           <div className="flex flex-col gap-[4px] items-start self-stretch shrink-0 flex-nowrap relative z-[4]">
-            <span className="text-[16px] font-normal leading-[29px] text-[#0e4a79]">
+            <span className="text-[16px] text_small_Bukra  font-normal leading-[29px] text-[#0e4a79]">
               الأقسام
             </span>
-            <span className="text-[30px] font-bold leading-[54.6px] text-[#0e4a79] tracking-[0.6px]">
+            <span className="text-[30px] text_bold_Bukra  font-bold leading-[54.6px] text-[#0e4a79] ">
               خبرة شاملة تغطي جميع احتياجاتك
             </span>
           </div>
-          <span className="text-[16px] font-normal leading-[29.12px] text-[#667680] tracking-[0.32px]">
+          <span className="text-[16px] font-normal text_small_Bukra md:w-[70%] leading-[29.12px] text-[#667680] ">
             في إنجاز للاستقدام، نقدم خدمات متكاملة من خلال أقسامنا المتخصصة التي
             تعمل بتناغم لضمان تحقيق أعلى مستويات الجودة والتميز. كل قسم مصمم
             لتلبية احتياجات الأفراد والشركات بكفاءة واحترافية.
@@ -72,11 +72,11 @@ const ImagesCardSlide = () => {
         </div>
         <div className="mt-5">
       <div className="flex gap-5">
-            <div className="group hover:bg-[#0e4a79] arrow-right swiper-prev flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7] ">
-                        <FontAwesomeIcon className="text-[#0e4a79] group-hover:text-white" icon={faArrowRight} size="lg" />
+            <div className="group hover:bg-[#0e4a79] transition-transform duration-300 hover:scale-90 arrow-right cursor-pointer swiper-prev flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7] ">
+                        <FontAwesomeIcon className="text-[#0e4a79]  group-hover:text-white" icon={faArrowRight} size="lg" />
               
             </div>
-            <div className="group hover:bg-[#0e4a79] arrow-left swiper-next flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
+            <div className="group hover:bg-[#0e4a79] transition-transform duration-300 hover:scale-90 arrow-left cursor-pointer swiper-next flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
             <FontAwesomeIcon className="text-[#0e4a79] group-hover:text-white" icon={faArrowLeft} size="lg" />
 
             </div>
@@ -85,7 +85,7 @@ const ImagesCardSlide = () => {
       </div>
 
       {/* Swiper Slider */}
-      <div className="swiper-container mt-8 sm:mt-4 w-[80%] mx-auto ">
+      <div className="swiper-container mt-8 sm:mt-4 w-[90%] ms-auto me-auto  md:ms-auto md:me-0 ">
         <Swiper
           dir="ltr"
           spaceBetween={20}
@@ -111,7 +111,7 @@ const ImagesCardSlide = () => {
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="p-6 bg-[#fbfbfb] rounded-[10px] border border-[#e7edf2]">
+              <div className="p-6 bg-[#fbfbfb] rounded-[10px]  transition-transform duration-300 hover:scale-90">
                 <div className="flex justify-center">
                 <div
                   className="w-full h-[136px] max-w-[136px] bg-cover bg-center rounded-t-[16px] mb-4"

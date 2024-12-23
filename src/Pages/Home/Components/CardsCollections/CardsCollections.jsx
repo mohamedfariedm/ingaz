@@ -45,18 +45,18 @@ const CardsCollections = () => {
 </div>
 
       {/* Content Section */}
-      <div className="scale-[98%] scale-y-95 flex flex-col lg:flex-row justify-between items-start gap-24 mt-8 mx-auto">
+      <div className="xl:scale-[98%] scale-y-95 flex flex-col lg:flex-row justify-between items-start gap-24 mt-8 mx-auto">
                 {/* Right Image Section */}
                 <div className="relative w-full lg:w-1/2 h-auto flex justify-center">
   {/* Image with shadow as a border-like box */}
   <div
-    className="absolute  rounded-[24px] w-[650px] h-full max-w-[693px] max-h-[588px] shadow-box"
+    className="absolute  rounded-[24px] w-full xl:w-[650px] h-full max-w-[693px] max-h-[588px] shadow-box"
   ></div>
 
   <img
     src={steps.find((step) => step.id === activeStep)?.image}
     alt={`Step ${activeStep}`}
-    className="relative rounded-[24px] w-[650px] xl:w-[650px] max-w-[693px] h-[588px] object-none bg-left-bottom"
+    className="relative rounded-[24px] w-full xl:w-[650px] max-w-[693px] h-[588px] object-none bg-left-bottom"
   />
 
   {/* Overlay with full gradient */}
@@ -75,28 +75,38 @@ const CardsCollections = () => {
         
         
         {/* Left Buttons Section */}
-        <div className=" flex flex-col gap-10 items-start w-full lg:w-1/2">
-          {steps.map((step) => (
-            <div key={step.id} className="flex items-center gap-6">
-                            <div
-                className={`w-[64px] h-[64px] flex items-center justify-center rounded-[16px] ${
-                  activeStep === step.id ? "bg-[#0e4a79] text-white" : "bg-[#e7edf2] text-[#0e4a79]"
-                }`}
-              >
-                <span className="text-[24px] font-bold">{step.id}</span>
-              </div>
-              <button
-                className={`flex-1 px-8 py-5 font-bold text-[1rem] rounded-[16px] w-full md:w-[501px] text-start ${
-                  activeStep === step.id ? "bg-[#0e4a79] text-white" : "bg-[#e7edf2] text-[#0e4a79]"
-                } font-medium`}
-                onClick={() => handleStepClick(step.id)}
-              >
-                {step.text}
-              </button>
+        <div className="relative flex flex-col gap-10 items-start w-full lg:w-1/2">
+  {/* Vertical Line */}
+  <div className="absolute start-[30px] top-0 bottom-0 w-[1px] bg-[#E7E7E7] z-0"></div>
 
-            </div>
-          ))}
-        </div>
+  {/* Steps */}
+  {steps.map((step) => (
+    <div
+      key={step.id}
+      className="relative flex items-center gap-6 z-10"
+    >
+      <div
+        className={`w-[64px] h-[64px] flex items-center justify-center rounded-[16px] ${
+          activeStep === step.id
+            ? "bg-[#0e4a79] text-white"
+            : "bg-[#e7edf2] text-[#0e4a79]"
+        }`}
+      >
+        <span className="text-[24px] font-bold">{step.id}</span>
+      </div>
+      <button
+        className={`flex-1 px-8 py-5 font-bold text-[1rem] rounded-[16px] w-full md:w-[501px] text-start ${
+          activeStep === step.id
+            ? "bg-[#0e4a79] text-white"
+            : "bg-[#e7edf2] text-[#0e4a79]"
+        } font-medium`}
+        onClick={() => handleStepClick(step.id)}
+      >
+        {step.text}
+      </button>
+    </div>
+  ))}
+</div>
 
 
       </div>
