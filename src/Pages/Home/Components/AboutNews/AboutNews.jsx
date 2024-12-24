@@ -33,31 +33,31 @@ const AboutNews = () => {
 
     </div>
     <div className="main-container bg-[#fbfbfb] relative mx-auto  py-16">
-      <div className="w-[80%] mx-auto">
+      <div className="w-[88%] scale-95 mx-auto">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between gap-8 lg:gap-0 mt-8">
           <div className="flex flex-col items-start lg:w-1/2">
-            <span className="text-[16px] font-normal leading-[29px] text-[#0e4a79] text-right">
+            <span className="text-[16px] text_small_Bukra  font-normal leading-[29px] text-[#0e4a79] text-right">
               أخبارنا
             </span>
-            <span className="text-[30px] md:w-[80%] font-bold leading-[54.6px] text-[#0e4a79] text-right">
+            <span className="text-[27px] text_bold_Bukra  md:w-[70%]  leading-[54.6px] text-[#0e4a79] text-right">
               اكتشف آخر أخبارنا وتحديثاتنا عن خدماتنا وإنجازاتنا
             </span>
           </div>
-          <span className="text-[16px] font-normal leading-[29.12px] text-[#667680] text-right lg:w-1/2">
+          <span className="text-[16px] text_small_Bukra   font-normal leading-[29.12px] text-[#667680] text-right lg:w-[45%]">
             ابقَ على اطلاع بكل جديد عن شركة إنجاز، من الإعلانات المهمة إلى إطلاق
             الخدمات والتطورات التي تؤكد التزامنا بتقديم الأفضل.
           </span>
         </div>
 
         {/* News Section */}
-        <div className="flex flex-wrap md:flex-nowrap gap-4 justify-between mt-8">
+        <div className="flex flex-wrap md:flex-nowrap gap-6 justify-between mt-8">
           {/* News Cards */}
           {newsData.map((news, index) => (
             <Link
             to={"/stats"}
               key={index}
-              className="flex flex-col sm:w-[390px] py-3 overflow-hidden group relative"
+              className="flex flex-col sm:w-1/3 py-3 overflow-hidden group relative"
             >
               <div className="absolute inset-0 border-b-2 border-transparent">
                 <div className="absolute top-[100%] -start-[100%] w-full h-1 bg-gradient-to-r from-[#0e4a79] via-[#0e4a79] to-[#0e4a79] group-hover:-translate-x-full transition-all duration-500"></div>
@@ -65,24 +65,24 @@ const AboutNews = () => {
               {/* News Image */}
               <div className="rounded-[16px] overflow-hidden">
                 <div
-                  className="h-[303px] bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+                  className="h-[303px] bg-cover bg-center transition-transform duration-500 group-hover:scale-125 "
                   style={{ backgroundImage: `url(${news.image})` }}
                 ></div>
               </div>
               {/* Card Content */}
               <div className="p-4 flex flex-col gap-4">
-                <span className="text-[20px] font-medium text-[#1d1d1d] line-clamp-2">
+                <span className="text-[18px]  font-semibold group-hover:text-[#667680] transition-transform duration-500 tracking-wide leading-[35px] text-[#1d1d1d] line-clamp-2">
                   {news.title}
                 </span>
-                <span className="text-[16px] font-normal text-[#667680] line-clamp-3">
+                <span className="text-[16px] text_small_Bukra font-normal leading-[28px] text-[#667680] line-clamp-3">
                   {news.description}
                 </span>
                 <div className="flex items-center gap-2">
-                  <span className="text-[16px] font-medium text-[#667680]">
+                  <span className="text-[16px] text_small_Bukra font-semibold text-[#667680]">
                     {news.date}
                   </span>
                   <span className="text-[16px] font-medium text-[#e7edf2]">•</span>
-                  <span className="text-[16px] font-medium text-[#0e4a79]">
+                  <span className="text-[16px] font-semibold text-[#0e4a79]">
                     {news.category}
                   </span>
                 </div>
@@ -93,7 +93,7 @@ const AboutNews = () => {
 
         {/* View All News Button */}
         <div className="flex justify-center mt-8">
-          <Link to={"/news"} className="px-6 py-3 border border-[#0e4a79] text-[#0e4a79] hover:bg-[#0e4a79] hover:text-white hover:scale-110 rounded-full text-[14px] font-normal transition-all duration-500">
+          <Link to={"/news"} className="px-12 py-3 text_small_Bukra border border-[#0e4a79] text-[#0e4a79] hover:bg-[#0e4a79] hover:text-white hover:scale-90 rounded-full text-[14px] font-normal transition-all duration-500">
             تصفح جميع الأخبار
           </Link>
         </div>
