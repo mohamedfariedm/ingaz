@@ -32,7 +32,25 @@ const CardsBooks = () => {
       }
     };
   }, []);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-visible");
+          } else {
+            entry.target.classList.remove("animate-visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
 
+    const sections = document.querySelectorAll(".animate-section");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <>
       <div id="numbers"></div>
@@ -41,7 +59,7 @@ const CardsBooks = () => {
         className="main-container w-full h-auto bg-[#fff] relative mx-auto"
       >
         {/* Title Section */}
-        <div className="flex flex-col items-center gap-4 w-full max-w-screen-lg mx-auto mt-[95.813px]">
+        <div className="flex flex-col items-center gap-4 w-full max-w-screen-lg mx-auto mt-[95.813px] animate-section opacity-0 transition-opacity duration-1000">
           <span className="text-[28px] text_bold_Bukra leading-[54.6px] text-[#0e4a79] text-center">
             إنــجاز فــي أرقــام
           </span>
@@ -53,7 +71,7 @@ const CardsBooks = () => {
         </div>
 
         {/* Stats Cards Section */}
-        <div className="flex flex-wrap flex-row-reverse gap-5 justify-center my-24">
+        <div className="flex flex-wrap flex-row-reverse gap-5 justify-center my-24 animate-section opacity-0 transition-opacity duration-1000">
           {/* Card 1 */}
           <div className="w-[250px] h-[345px] bg-gradient-to-tr from-[#10637C]/100 to-[#79B8B3]/100 relative overflow-hidden rounded-[24px]">
             <div className="flex flex-col items-start gap-4 mt-6 ms-3 ">

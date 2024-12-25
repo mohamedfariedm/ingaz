@@ -1,20 +1,40 @@
+import { useEffect } from "react";
 import "./Explore.css"
 
 const ExploreCountries = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-visible");
+          } else {
+            entry.target.classList.remove("animate-visible");
+          }
+        });
+      },
+      { threshold: 0.2 } // Trigger animation when 20% of the section is visible
+    );
+
+    const sections = document.querySelectorAll(".animate-section");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <>
     <div id="partners" ></div>
-    <div className="bg-[#fbfbfb]">
+    <div className="bg-[#fbfbfb] ">
       <div className="w-full h-auto bg-[#fbfbfb] flex flex-col items-center py-24  px-4 ">
       {/* Title Section */}
       <div className="text-center">
-        <span className="text-[23px] text_bold_Bukra leading-[45.5px] text-[#0e4a79] block">
+        <span className="text-[23px] text_bold_Bukra leading-[45.5px] text-[#0e4a79] block animate-section opacity-0 transition-opacity duration-1000">
           شــــركـــاء الــنــجـاح
         </span>
       </div>
 
       {/* Partners Grid */}
-      <div className="flex flex-wrap justify-center gap-8 w-full max-w-[1264px] xl:scale-[85%] ">
+      <div className="flex flex-wrap justify-center gap-8 w-full max-w-[1264px] xl:scale-[85%] animate-section opacity-0 transition-opacity duration-1000">
         {/* Partner Card */}
         {[
           "https://s3-alpha-sig.figma.com/img/5f86/0cdf/d7abede6d5a7e67a8cbbc9f6602154f7?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A-JJEu3U1FpQpBJG276jXXy0om9XpVjZb7xUJFuVLUHztnf9GBGpBVsj6DlU4Sa0Gxzc4MFsTN-wpdGh2XbeX6-hczIYS0MAICJim2rkXvN2DJLGpyPejVQVEdUq9J1bVL4Jw2QVuXGUCE5wbQ~NQne2KMl7Uh-7LPlL5TyyxdSeh8h1bUG6as14Ym80g~izToTlR~cWRiJZpzRbTzd6e5PmbI7E9br1RJpeykbltEBckRWMCiWZrOBbKCI3eoX~Oz0uirNGcL5VdK85TcUro-C~-tcvepXmjYzH2CIpE708RxfpZZfRUUNJi7VvLN1bNewqH1UH5d5bwnSGUTJoHQ__",

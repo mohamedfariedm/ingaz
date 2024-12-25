@@ -3,19 +3,38 @@ import "swiper/swiper-bundle.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 const ImagesCard = () => {
-
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-visible");
+            } else {
+              entry.target.classList.remove("animate-visible");
+            }
+          });
+        },
+        { threshold: 0.2 } // Trigger animation when 20% of the section is visible
+      );
+  
+      const sections = document.querySelectorAll(".animate-section");
+      sections.forEach((section) => observer.observe(section));
+  
+      return () => observer.disconnect(); // Cleanup
+    }, []);
   return (<>
   <div id="services" className=" "></div>
 <div  className="main-container h-auto bg -[#fbfbfb] w-full mt-[85px] relative  ">
       {/* Background Images */}
       
       {/* Content Section */}
-      <div className="xl:scale-[92%] w-[80%] md:w-[90%] xl:w-[90%] mx-auto flex flex-col items-center md:flex-row md:items-end justify-between mb-10">
+      <div className="xl:scale-[92%] w-[80%] md:w-[90%] xl:w-[90%] mx-auto flex flex-col items-center md:flex-row md:items-end justify-between mb-10 animate-section opacity-0 transition-opacity duration-1000">
       <div className="flex flex-col gap-[24px] items-start z-[3] mt-16 sm:mt-8 md:w-[70%] ">
         <div className="flex flex-col gap-[4px] items-start self-stretch shrink-0 flex-nowrap relative z-[4]">
           <span className="  text-[16px] text_small_Bukra  font-normal leading-[29px] text-[#0e4a79]">
@@ -30,12 +49,12 @@ const ImagesCard = () => {
         </span>
       </div>
       <div className="mt-5">
-      <div className="flex gap-5">
-            <div className="group hover:bg-[#0e4a79] transition-transform duration-300 hover:scale-90  arrow-right cursor-pointer swiper-prev flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7] ">
+      <div className="flex gap-5 animate-section ">
+            <div className="group hover:bg-[#0e4a79] transition-transform duration-300 hover:scale-90  arrow-1-right cursor-pointer swiper-prev flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7] ">
                         <FontAwesomeIcon className="text-[#0e4a79] group-hover:text-white cursor-pointer" icon={faArrowRight} size="lg" />
               
             </div>
-            <div className="group hover:bg-[#0e4a79] cursor-pointer transition-transform duration-300 hover:scale-90 arrow-left swiper-next flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
+            <div className="group hover:bg-[#0e4a79] cursor-pointer transition-transform duration-300 hover:scale-90 arrow-1-left swiper-next flex w-[64px] h-[64px] pt-[20px] pr-[20px] pb-[20px] pl-[20px] gap-[8px] justify-center items-center flex-nowrap rounded-[32px] border-solid border border-[#e7e7e7]">
             <FontAwesomeIcon className="text-[#0e4a79] group-hover:text-white" icon={faArrowLeft} size="lg" />
 
             </div>
@@ -44,18 +63,22 @@ const ImagesCard = () => {
       </div>
 
      {/* Swiper Slider */}
-     <div className="swiper-container mt-8 px-2  sm:mt-20  ">
+     <div className="swiper-container mt-8 px-2  sm:mt-20 animate-section opacity-0 transition-opacity duration-1000 ">
         <Swiper
         dir="ltr"
           spaceBetween={20} // Adjust space between cards
           slidesPerView={1} // Show 3 full cards and half of the 4th
           centeredSlides={true} // Center the active slide
           navigation={{
-            nextEl: ".arrow-right",
-            prevEl: ".arrow-left"
+            nextEl: ".arrow-1-right",
+            prevEl: ".arrow-1-left"
           }}
-          modules={[Navigation]}
+          modules={[Navigation,Autoplay]}
           loop={true}
+          autoplay={{
+            delay: 3000, // Time in milliseconds between slide transitions
+            disableOnInteraction: false, // Continue autoplay after user interaction
+          }}
           breakpoints={{
             640: {
               slidesPerView: 1,

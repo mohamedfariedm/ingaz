@@ -40,7 +40,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none !important;
+  text-decoration: none;
   font-family: '29LT_Bukra', sans-serif;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -336,7 +336,7 @@ textarea::placeholder,
 .form-select {
   font-size: 13px !important;
   font-weight: 500 !important;
-  color: #a8b1ce !important;
+  color: rgba(128, 128, 128, 0.39) !important;
 
 }
 
@@ -810,3 +810,25 @@ START AIRPLAN
 /* ===============================
 END AIRPLAN
 ============================== */
+/* Initial state: hidden */
+/* Initial state: hidden and moved down */
+.opacity-0 {
+  opacity: 0;
+  transform: translateY(20px); /* Start 20px below its final position */
+}
+
+/* Visible state */
+.animate-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to its original position */
+}
+
+/* Transition */
+.transition-opacity {
+  transition: opacity .6s ease-out, transform 1s ease-out;
+}
+
+.opacity-non{
+  opacity: 0;
+
+}

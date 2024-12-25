@@ -2,10 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Vector from "assets/certification.svg";
+import { useEffect } from "react";
 
 const certifications = [
   {
@@ -36,21 +37,37 @@ const certifications = [
     image:
       "https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NW7g8C~Hrs3D09lWeZETwEQtprm--17vqgMrPK0RYVVgk~1I5tdOhq2ATZDZBFj-ZOEIwLrJEhiVQhETZn4QO4UOsxvrvl2Jpk8VVSAau2vz2sBS7abBo-GsmBzQdbfXEnTw0duhWa-jsfDC~lpU6rs1eoz4qd2QPBRMJ9Ceow-IJo9s9jxsaee03Co5DKsDHUBZPPqkwj4DtzTmRvT-yYH-cvcJMGneFC9C~nrG9POvfq70gI11JUbgfFPLly5Upw8p02ojI-F2Sw~nQHOvO8Yj7HC9XxjxBANuZHU3jrN34Mg2biYuru1ZteXmKfvrt5yYxU1mxn~D5e70l-Hjbg__",
   },
-  {
-    title: "أيزو 27001 : 2022",
-    description:
-      "المواصفة الدولية ISO 27001:2022 هي المعيار الذي يحدد متطلبات نظام إدارة أمن المعلومات. حصول شركة إنجاز على هذه الشهادة يعكس التزامها بحماية البيانات والمعلومات وتطبيق أعلى معايير الأمان.",
-    image: Vector,
-  },
 ];
 
 const CustomersReviews = () => {
+
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-visible");
+            } else {
+              entry.target.classList.remove("animate-visible");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+  
+      const sections = document.querySelectorAll(".animate-section");
+      sections.forEach((section) => observer.observe(section));
+  
+      return () => observer.disconnect();
+    }, []);
+
   return (
     <>
       <div id="certifications"></div>
       <div className="w-full bg-[#fff] relative h-[110vh] mx-auto py-4 scale-90">
         {/* Top Section */}
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-20 justify-center items-center relative mx-auto pb-8 pt-12 px-4 w-[95%] ">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-20 justify-center items-center relative mx-auto pb-8 pt-12 px-4 w-[95%] animate-section opacity-0 transition-opacity duration-1000">
           <div className="flex flex-col gap-[4px] items-start self-stretch shrink-0 flex-nowrap relative z-[4]">
             <span className="text-[16px] text_small_Bukra text-start font-normal leading-[29px] text-[#0e4a79] tracking-[0.32px]">
               الشهادات
@@ -67,9 +84,9 @@ const CustomersReviews = () => {
         </div>
 
         {/* Certification Section */}
-        <div className="relative mt-8 md:mt-[83px]">
+        <div className="relative mt-8 md:mt-[83px] animate-section opacity-0 transition-opacity duration-1000">
           {/* Background Box */}
-          <div className="absolute inset-y-0 start-0 lg:-top-[15%] lg:-start-32 w-[80%] flex items-center justify-center max-w-[1166px] min-h-[530px] bg-[#0e4a79] rounded-tl-[32px] rounded-bl-[32px]" />
+          <div className="absolute inset-y-0 start-0 lg:-top-[20%] lg:-start-32 w-[80%] flex items-center justify-center max-w-[1166px] min-h-[530px] bg-[#0e4a79] rounded-tl-[32px] rounded-bl-[32px]" />
 
           {/* Swiper Section */}
           <div className="relative z-10">
@@ -78,12 +95,17 @@ const CustomersReviews = () => {
           spaceBetween={20}
           slidesPerView={1}
           centeredSlides={true}
+          modules={[Navigation,Autoplay]}
+          loop={true}
+          autoplay={{
+            delay: 3000, // Time in milliseconds between slide transitions
+            disableOnInteraction: false, // Continue autoplay after user interaction
+          }}
           navigation={{
             nextEl: ".arrow-right",
             prevEl: ".arrow-left",
           }}
-          modules={[Navigation]}
-          loop={true}
+
               className="my-8"
             >
               {certifications.map((cert, index) => (

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./BannerHome.css";
 import Victor from "assets/vectormap.svg";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 const BannerHome = () => {
   const countries = [
@@ -67,16 +68,40 @@ const BannerHome = () => {
     },
   ];
 
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate-visible");
+              } else {
+                entry.target.classList.remove("animate-visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+    
+        const sections = document.querySelectorAll(".animate-section");
+        sections.forEach((section) => observer.observe(section));
+    
+        return () => observer.disconnect();
+      }, []);
+
   return (
     <>
     <div id="begin"></div>
     <div className="main-container w-full bg-[#fbfbfb] py-20 relative mx-auto my-0">
       <div className="flex flex-col items-center px-4">
-        <h1 className="text-[27px] font-bold text_bold_Bukra leading-[54.6px] text-[#0e4a79] text-center pb-16">
+        <h1 className="text-[27px] font-bold text_bold_Bukra leading-[54.6px] text-[#0e4a79] text-center pb-16 animate-section opacity-0 transition-opacity duration-1000">
           مناطق الاستقدام و أرقام المترجمين
         </h1>
-        <div className="relative w-full mt-10 z-2">
-          <div className="flex flex-wrap gap-y-11 gap-x-4 justify-center">
+        <div className="relative w-full mt-10 z-2 ">
+        <div
+            style={{ backgroundImage: `url(${Victor})` }}
+            className="w-full h-[764px] bg-cover bg-no-repeat absolute top-0 left-0"
+          />
+          <div className="flex  flex-wrap gap-y-14 gap-x-4 justify-center animate-section opacity-0 transition-opacity duration-1000">
             {countries.map((country, index) => (
               <div
                 key={index}
@@ -111,10 +136,7 @@ const BannerHome = () => {
               </div>
             ))}
           </div>
-          <div
-            style={{ backgroundImage: `url(${Victor})` }}
-            className="w-full h-[764px] bg-cover bg-no-repeat absolute top-0 left-0 z-1"
-          />
+
         </div>
       </div>
     </div>

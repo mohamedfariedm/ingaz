@@ -9,48 +9,54 @@ const AboutUs = () => {
   return (
     <>
        <HelmetInfo titlePage={"من نحن"} />
-<div className="mt-[85px]"/>
+<div className="mt-[150px]"/>
        <div className="main-container bg-[#fff] mx-auto px-4 py-8 ">
       {/* Header Section */}
-      <div className="flex flex-col items-center gap-8 max-w-screen-lg mx-auto">
+      <div className="flex flex-col items-center gap-4 max-w-screen-lg mx-auto">
         {/* Breadcrumb */}
       <BreadCrumb/>
 
         {/* Title Section */}
-        <div className="text-center flex flex-col gap-6">
+        <div className="text-center flex items-center flex-col gap-6">
           <span className="text-lg font-medium text-[#0e4a79]">
             
           </span>
-          <h1 className="text-4xl lg:text-5xl font-bold text-[#0e4a79] leading-snug">
+          <h1 className="text-4xl lg:text-[2.75rem] text_bold_Bukra text-[#0e4a79] leading-snug">
           شريكك في تحقيق الراحة والجودة
                     </h1>
-          <p className="text-lg lg:text-xl text-[#667680] leading-relaxed">
+          <p className="text-lg lg:text-[1rem] font-medium  w-[85%]  text-[#0e4a79] leading-relaxed">
           نحرص على توفير إجابات واضحة لأكثر الأسئلة شيوعاً حول خدماتنا، لتسهيل تجربتك وضمان فهمك الكامل لكل خطوة.
           </p>
         </div>
       </div>
-      <div className="main-container mx-auto my-0 bg-white px-4 py-8 relative md:h-[110vh]">
+      <div className="w-[90%] mx-auto my-0 bg-white px-4 py-8 relative md:h-[110vh]">
   {/* Section 1: Company Intro */}
-  <div className="mx-auto my-10  text-[#0e4a79] text-base md:text-lg leading-relaxed px-5">
-    <p>
+  <div className="mx-auto my-10  text-[#0e4a79] text-lg lg:text-[1rem] font-medium  leading-relaxed px-5">
+    <p className="text-lg lg:text-[1rem]  font-medium leading-relaxed tracking-wide">
       تأسست شركة إنجاز للاستقدام في عام 2015 كإحدى شركات مجموعة إنجاز، لتقدم حلولاً
       متكاملة في مجال استقدام العمالة المنزلية والمهنية. منذ البداية، التزمت إنجاز
       بتوفير خدمات استثنائية تلبي احتياجات الأفراد والشركات على حد سواء، مع التركيز
       على الجودة والابتكار والمصداقية.
     </p>
     <br />
-    <p>
+    <p className="text-lg lg:text-[1rem]  font-medium leading-relaxed tracking-wide">
       تميزت إنجاز ببناء شراكات قوية مع مراكز تدريب عالمية في عدة دول، لتضمن تأهيل
       الكوادر البشرية وفق أعلى المعايير المهنية، ما يجعلها جاهزة لتلبية توقعات
       عملائنا بكفاءة واحترافية.
     </p>
     <br />
-    <p>
+    <p className="text-lg lg:text-[1rem]  font-medium leading-relaxed tracking-wide">
       نسعى جاهدين للريادة في مجال الاستقدام من خلال تقديم خدمات موثوقة تواكب
       تطلعات العملاء وتحقق لهم الراحة والتميز...
     </p>
     <br />
-    <p>
+    <p className="text-lg lg:text-[1rem]  font-medium leading-relaxed tracking-wide">
+      بفضل فريق عملنا المتميز وخدماتنا المدروسة، نجحنا في كسب ثقة آلاف العملاء في
+      جميع مناطق المملكة. نلتزم في إنجاز بحفظ حقوق العملاء والعمال على حد سواء،
+      من خلال تطبيق أعلى معايير الجودة والشفافية.
+    </p>
+    <br />
+    <p className="text-lg lg:text-[1rem]  font-medium leading-relaxed tracking-wide">
       بفضل فريق عملنا المتميز وخدماتنا المدروسة، نجحنا في كسب ثقة آلاف العملاء في
       جميع مناطق المملكة. نلتزم في إنجاز بحفظ حقوق العملاء والعمال على حد سواء،
       من خلال تطبيق أعلى معايير الجودة والشفافية.

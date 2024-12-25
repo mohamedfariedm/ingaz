@@ -1,8 +1,27 @@
 import { Link } from "react-router-dom";
 import "./HeaderCard.css";
 import Victor from "assets/Vector.svg";
+import { useEffect } from "react";
 const HeaderCard = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-visible");
+          } else {
+            entry.target.classList.remove("animate-visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
 
+    const sections = document.querySelectorAll(".animate-section");
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <div className=" w-[90%]  relative mx-auto scale-[98%] "
         // style={
@@ -16,9 +35,9 @@ const HeaderCard = () => {
     >
       {/* Background Images */}
       <div className="pt-20">
-<img className="relative w-[100%] xl:absolute xl:bottom-[10%]  xl:end-10 xl:w-[69%]"  src={Victor} alt="" />
+<img className="relative w-[100%] xl:absolute xl:bottom-[10%]  xl:end-10 xl:w-[69%] animate-section opacity-0 transition-opacity duration-1000"  src={Victor} alt="" />
       {/* Content Section */}
-      <div className=" w-full xl:w-[50%] py-10 xl:ms-8">
+      <div className=" w-full xl:w-[50%] py-10 xl:ms-8 animate-section opacity-0 transition-opacity duration-1000">
       <div className="flex flex-col gap-5  items-start flex-nowrap">
         <div className="flex flex-col gap-[4px] items-start self-stretch shrink-0 flex-nowrap relative z-[4]">
           <span className=" text-[16px] font-normal leading-[29px] text-[#0e4a79] text_small_Bukra">
