@@ -1,11 +1,12 @@
 import { faArrowAltCircleLeft, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const BreadCrumb = () => {
 
     return (
         <div className="flex items-center gap-2 text-sm text-[#667680]">
-          <span>الصفحة الرئيسية</span>
+          <Link to={"/"}>الصفحة الرئيسية</Link>
           <div className="w-6 h-6 bg-cover bg-center flex justify-center items-center"> 
           <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" width="15" height="15" viewBox="0 0 15 15" xmlSpace="preserve">
 

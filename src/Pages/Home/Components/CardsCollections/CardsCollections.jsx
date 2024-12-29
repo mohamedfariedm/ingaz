@@ -12,10 +12,10 @@ const CardsCollections = () => {
       image:
         "https://s3-alpha-sig.figma.com/img/5b9e/7bf2/3bcbd9228014f9ee714624cc0885a382?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g9c3oY4NkI5sdKFk3iAuIYOwe0~1nzKWodVNxzRZDBbh9MiGamM9wsv9369outrAaoCw~7IML9YOA9l4GRbAnJikW1PQM3Fo0xHtYMjkE6F9vCQSbWGZoW1ycCMqNR3G-qh7nAk9e5lfSrGiBB2WFeUHy2flOFhuqIUL40YRUwe2c6ZsxAn9ZZFr64uy0-LsIocS5BxmEs0XNylDyo3fMA8FsXZBfSf7Di9k2iOMlMi1eQJ~k~68ddwFbisMgGJGMmDIWyMuZv-LKEaHvgG266r47k1--BOelQ8FzegIhvh3rKH49NW4w9qWpw8wOoC0p9KaCN6hqf7rDerkCusDtQ__",
     },
-    { id: 2, text: "تحديد جنسية العاملة وعدد أفراد الأسرة.", image: "https://placehold.co/588x693" },
-    { id: 3, text: "استخراج التاشيرة عبر منصة مساند.", image: "https://placehold.co/588x693" },
-    { id: 4, text: "استخراج السيرة الذاتية المناسبة.", image: "https://placehold.co/588x693" },
-    { id: 5, text: "رفع التعاقد عبر منصة مساند.", image: "https://placehold.co/588x693" },
+    { id: 2, text: "تحديد جنسية العاملة وعدد أفراد الأسرة.", image: "https://placehold.co/650x693" },
+    { id: 3, text: "استخراج التاشيرة عبر منصة مساند.", image: "https://placehold.co/650x693" },
+    { id: 4, text: "استخراج السيرة الذاتية المناسبة.", image: "https://placehold.co/650x693" },
+    { id: 5, text: "رفع التعاقد عبر منصة مساند.", image: "https://placehold.co/650x693" },
     { id: 6, text: "الدفع.", image: "https://placehold.co/588x693" },
   ];
 
@@ -79,7 +79,7 @@ const CardsCollections = () => {
                 className="relative rounded-[24px] w-full xl:w-[650px] max-w-[693px] h-[588px] object-none bg-left-bottom"
               />
               <div
-                className="absolute inset-0 rounded-[24px] flex items-end p-4"
+                className="absolute  inset-0 rounded-[24px] flex items-end p-4"
                 style={{
                   background: "linear-gradient(to bottom, #149C7533 20%, #10637C 100%)",
                 }}

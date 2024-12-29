@@ -99,7 +99,7 @@ const BannerHome = () => {
         <div className="relative w-full mt-10 z-2 ">
         <div
             style={{ backgroundImage: `url(${Victor})` }}
-            className="w-full h-[764px] bg-cover bg-no-repeat absolute top-0 left-0"
+            className="w-full h-full bg-repeat xl:h-[764px] xl:bg-cover xl:bg-no-repeat absolute top-0 left-0"
           />
           <div className="flex  flex-wrap gap-y-14 gap-x-4 justify-center animate-section opacity-0 transition-opacity duration-1000">
             {countries.map((country, index) => (

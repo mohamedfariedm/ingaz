@@ -29,7 +29,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="w-[90%] mx-auto my-0 bg-white px-4 py-8 relative md:h-[110vh]">
+      <div className="w-[90%] mx-auto my-0 bg-white px-4 py-8 relative ">
   {/* Section 1: Company Intro */}
   <div className="mx-auto my-10  text-[#0e4a79] text-lg lg:text-[1rem] font-medium  leading-relaxed px-5">
     <p className="text-lg lg:text-[1rem]  font-medium leading-relaxed tracking-wide">
@@ -62,16 +62,17 @@ const AboutUs = () => {
       من خلال تطبيق أعلى معايير الجودة والشفافية.
     </p>
   </div>
-<div className="flex flex-col md:flex-row justify-start items-center mt-32 ">
-  {/* Section 2: Chairman's Message */}
-  <div className="  max-w-screen-md  text-right px-5">
-    <h3 className="text-sm md:text-base font-semibold text-[#1d1d1d] mb-1">
+</div>
+  <div className="md:h-[75vh] flex items-center relative">
+<div className="flex flex-col md:flex-row justify-start items-center w-[90%] mx-auto ">
+  <div className="  max-w-screen-md  text-right ps-10 py-10">
+    <h3 className="text-sm md:text-base  text_small_Bukra text-[#1d1d1d] mb-1 leading-[29px] py-3">
       كلمة رئيس مجلس الإدارة
     </h3>
-    <h2 className="text-2xl md:text-3xl font-bold text-[#1d1d1d] leading-tight">
+    <h2 className="text-2xl md:text-[1.65rem] text_bold_Bukra text-[#1d1d1d] leading-tight pb-10">
       رؤية تقود نحو التميز
     </h2>
-    <p className="mt-4 text-[#667680] text-sm md:text-base leading-relaxed ">
+    <p className="mt-4 text-[#667680] text_small_Bukra text-sm md:text-base leading-[29px] ">
       في شركة إنجاز للاستقدام، نؤمن بأن النجاح الحقيقي يأتي من تقديم خدمات
       استثنائية تلبي احتياجات عملائنا وتفوق توقعاتهم. منذ انطلاقنا في عام 2015،
       وضعنا نصب أعيننا بناء علاقات قائمة على الثقة والاحترافية، مع التركيز على
@@ -79,31 +80,31 @@ const AboutUs = () => {
     </p>
   </div>
 
-  {/* Section 3: Background Image */}
   <div
-    className=" md:absolute w-full h-[200px] md:h-[350px] xl:h-[420px] bg-cover md:bg-center md:-start-2 md:bottom-0"
-    style={{ backgroundImage: `url(${Victor})` }}
+    className=" md:absolute w-full h-[200px] md:h-[350px] md:bottom-0 xl:h-[420px] bg-cover md:bg-center md:-start-2 "
+    style={{ backgroundImage: `url(${Victor})`,backgroundSize:"cover" }}
   ></div>
 
 </div>
-</div>
 
-<div className="main-container w-full bg-[#fff] relative mx-auto my-0 sm:px-16 py-8">
+  </div>
+
+<div className="main-container w-full bg-[#fff] relative mx-auto my-0 md:px-36 py-8">
   {/* Vision and Mission Section */}
   <div className="flex flex-col items-center gap-6 text-center mt-12">
     <div className="flex flex-col gap-2">
-      <span className="text-lg font-medium text-[#1d1d1d]">رؤيتنا ورسالتنا</span>
-      <span className="text-2xl md:text-3xl font-bold text-[#1d1d1d] leading-snug">
+      <span className="text-lg font-medium text_small_Bukra text-[#1d1d1d]">رؤيتنا ورسالتنا</span>
+      <span className="text-2xl md:text-[1.65rem] text_bold_Bukra font-bold text-[#1d1d1d] leading-snug">
         نحو مستقبل يحقق طموحاتك
       </span>
     </div>
-    <p className="text-sm md:text-base text-[#667680] max-w-[90%] md:max-w-[600px] leading-relaxed">
+    <p className="text-sm md:text-base text_small_Bukra  text-[#667680] max-w-[90%] md:max-w-[550px] leading-relaxed">
       رؤيتنا تسعى للريادة في تقديم خدمات استقدام مبتكرة وموثوقة، ورسالتنا تركز على استقطاب الكفاءات الأفضل عالميًا لتلبية احتياجات عملائنا باحترافية عالية
     </p>
   </div>
 
   {/* Vision Box */}
-  <div className="flex flex-col lg:flex-row items-center justify-between bg-[#0e4a79] rounded-[16px] overflow-hidden mt-12 lg:mt-16 max-w-[90%] lg:max-w-[1000px]  p-6 gap-6">
+  <div className=" flex flex-col lg:flex-row items-center justify-between bg-[#0e4a79] rounded-[16px] overflow-hidden mt-12 lg:mt-16 max-w-[90%] lg:max-w-[900px]  p-6 gap-6 ">
   <div className="w-full max-w-[272px] h-[161px]">
       <img
         src={Mission}
@@ -112,9 +113,9 @@ const AboutUs = () => {
       />
     </div>
     
-    <div className="flex flex-col gap-4 text-right text-white max-w-[90%] lg:max-w-[600px]">
-      <span className="text-2xl font-bold leading-snug">الرؤية</span>
-      <p className="text-base leading-relaxed">
+    <div className="flex flex-col gap-4 text-right text-white max-w-[90%] lg:max-w-[600px] pe-6">
+      <span className="text-2xl md:text-[1.5rem] text_bold_Bukra   leading-snug">الرؤية</span>
+      <p className="text-base leading-relaxed text_small_Bukra">
         أن نكون الخيار الأول في مجال الاستقدام بالمملكة العربية السعودية، من خلال تقديم خدمات احترافية تتسم بالجودة العالية والسرعة في الأداء، مع بناء علاقات قوية قائمة على الثقة والمصداقية مع عملائنا.
       </p>
     </div>
@@ -122,10 +123,10 @@ const AboutUs = () => {
   </div>
 
   {/* Mission Box */}
-  <div className="flex flex-col lg:flex-row-reverse items-center justify-between bg-[#0e4a79] rounded-[16px] overflow-hidden mt-8 lg:mt-12 max-w-[90%] lg:max-w-[1000px] ms-auto p-6 gap-6">
+  <div className="flex flex-col lg:flex-row-reverse items-center justify-between bg-[#0e4a79] rounded-[16px] overflow-hidden mt-8 lg:mt-12 max-w-[90%] lg:max-w-[900px] ms-auto p-6 gap-6">
     <div className="flex flex-col gap-4 text-right text-white max-w-[90%] lg:max-w-[600px]">
-      <span className="text-2xl font-bold leading-snug">الرسالة</span>
-      <p className="text-base leading-relaxed">
+      <span className="text-2xl md:text-[1.5rem] text_bold_Bukra   leading-snug">الرسالة</span>
+      <p className="text-base leading-relaxed text_small_Bukra">
         تقديم حلول استقدام شاملة تستقطب الكفاءات الأفضل عالميًا، مع ضمان تدريبهم وتأهيلهم وفق أعلى المعايير لتلبية احتياجات الأفراد والشركات في المملكة، مع الحفاظ على حقوق العملاء والعمال.
       </p>
     </div>

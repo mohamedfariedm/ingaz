@@ -84,6 +84,10 @@ const AboutNews = () => {
                 key={index}
                 className="flex flex-col sm:w-1/3 py-3 overflow-hidden group relative animate-section opacity-0 transition-opacity duration-1000"
               >
+                            {/* Hover Effect */}
+            <div className="absolute inset-0 border-b-2 border-transparent">
+              <div className="absolute top-[100%] -start-[100%] w-full h-1 bg-gradient-to-r from-[#0e4a79] via-[#0e4a79] to-[#0e4a79] group-hover:-translate-x-full transition-all duration-500"></div>
+            </div>
                 {/* News Image */}
                 <div className="rounded-[16px] overflow-hidden">
                   <div

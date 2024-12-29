@@ -12,18 +12,18 @@ const Faq = () => {
   return (
     <>
       <HelmetInfo titlePage={"الاسئلة الشائعة"} />
-      <div className="mt-[85px]" />
+      <div className="mt-[150px]" />
       <div className="main-container bg-[#fff] mx-auto px-4 py-8">
         {/* Header Section */}
-        <div className="flex flex-col items-center gap-8 max-w-screen-lg mx-auto">
+        <div className="flex flex-col items-center justify-center gap-10 max-w-screen-lg mx-auto ">
           {/* Breadcrumb */}
           <BreadCrumb />
           {/* Title Section */}
-          <div className="text-center flex flex-col gap-6">
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#0e4a79] leading-snug">
+          <div className="text-center flex justify-center items-center flex-col gap-4">
+            <h1 className="text-4xl lg:text-[2.7rem] text_bold_Bukra text-[#0e4a79] leading-[80px]">
               الأسئلة الأكثر شيوعاً
             </h1>
-            <p className="text-lg lg:text-xl text-[#667680] leading-relaxed mx-auto">
+            <p className="text-lg lg:text-[1.08rem] text-center text_small_Bukra  text-[#0e4a79] leading-relaxed px-[3.75rem] xl:w-[65%] mx-auto ">
               نحرص على توفير إجابات واضحة لأكثر الأسئلة شيوعاً حول خدماتنا، لتسهيل
               تجربتك وضمان فهمك الكامل لكل خطوة.
             </p>
@@ -31,19 +31,19 @@ const Faq = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="flex flex-col gap-4 px-8 py-8 bg-[#0e4a79] rounded-[40px] mx-auto my-16 max-w-[95%] md:max-w-[1200px]">
+        <div className="flex flex-col gap-4 px-8 py-8 bg-[#0e4a79] rounded-[40px] mx-auto my-16 max-w-[95%] md:max-w-[85%] xl:p-28">
           {Array.from({ length: 8 }).map((_, index) => (
             <div key={index} className="overflow-hidden rounded-[16px] bg-[#255e8a]">
               <button
                 onClick={() => toggleQuestion(index)}
                 className="flex justify-between items-center w-full px-6 py-4 text-left text-white"
               >
-                <span className="text-[16px] sm:text-[18px] font-normal leading-[1.5]">
+                <span className="text-[16px] sm:text-[19px] text_small_Bukra font-normal leading-[1.5]">
                   هل يمكن ترقية التأمين الطبي في حال رغبة العميل/الموظف؟
                 </span>
                 <svg
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 22 22"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ const Faq = () => {
                   openIndex === index ? "max-h-40 py-4" : "max-h-0"
                 } overflow-hidden px-6`}
               >
-                <p className="text-white text-[14px] leading-relaxed">
+                <p className="text-white text-[14px] text_small_Bukra leading-relaxed">
                   نعم، يمكن ترقية التأمين الطبي بناءً على رغبة العميل أو الموظف من
                   خلال التواصل معنا وتقديم طلب الترقية.
                 </p>
