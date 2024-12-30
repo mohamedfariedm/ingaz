@@ -34,7 +34,7 @@ const HeaderCard = () => {
     // }
     >
       {/* Background Images */}
-      <div className="pt-20">
+      <div className="md:pt-20">
 <img className="relative w-[100%] xl:absolute xl:bottom-[10%]  xl:end-10 xl:w-[69%] animate-section opacity-0 transition-opacity duration-1000"  src={Victor} alt="" />
       {/* Content Section */}
       <div className=" w-full xl:w-[50%] py-10 xl:ms-8 animate-section opacity-0 transition-opacity duration-1000">
@@ -43,12 +43,12 @@ const HeaderCard = () => {
           <span className=" text-[16px] font-normal leading-[29px] text-[#0e4a79] text_small_Bukra">
             من نحن
           </span>
-          <span className="flex  text-[28px] text_bold_Bukra  leading-[54.6px] text-[#0e4a79] w-[80%]  ">
+          <span className="flex  text-[28px] text_bold_Bukra  leading-[54.6px] text-[#0e4a79] md:w-[80%]  ">
             رحلة التميز في توفير الكوادر البشرية لتلبية احتياجات الأفراد
             والأعمال في المملكة
           </span>
         </div>
-        <span className="flex  font-medium text-[1rem] leading-[25px] text_small_Bukra text-[#667680] w-[85%]">
+        <span className="flex  font-medium text-[1rem] leading-[25px] text_small_Bukra text-[#667680] md:w-[85%]">
           منذ تأسيسها في عام 2015، أصبحت شركة إنجاز للاستقدام إحدى أبرز شركات
           مجموعة إنجاز، التي تفخر بتقديم حلول شاملة ومتكاملة في مجال استقدام
           العمالة المنزلية والمهنية من مختلف الجنسيات. تعمل إنجاز برؤية واضحة

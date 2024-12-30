@@ -51,6 +51,28 @@ const CardsBooks = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldAnimate(false); // Reset the animation
+          setTimeout(() => setShouldAnimate(true), 100); // Restart the animation
+        }
+      },
+      { threshold: 0.1 } // Lowered threshold for small screens
+    );
+  
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+  
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   return (
     <>
       <div id="numbers"></div>

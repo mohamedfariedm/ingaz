@@ -26,7 +26,7 @@ const SliderHeader = () => {
     <>
     <div id="main"></div>
       <div className="banner-main-area--1 h-[100vh]">
-        <div className="banner-one section-padding bg-image h-[100vh]">
+        <div className="banner-one section-padding bg-image h-[90vh] lg:h-[100vh]  ">
           <div className="video-bg overlay-bg animate-section opacity-0 transition-opacity duration-1000">
             <video
               autoPlay
@@ -51,7 +51,7 @@ const SliderHeader = () => {
       <span className="flex w-full justify-center text_small_Bukra leading-[29px] pt-4 items-start text-center  text-[1.1rem]  font-normal text-white animate-section opacity-0 transition-opacity duration-1000">
         نحن في إنجاز للاستقدام، نقدم لك خدمات استقدام متكاملة تجمع بين الكفاءة
         والجودة، مع
-        <br/>
+        <br className="hidden lg:block"/>
          تدريب احترافي للعمالة لضمان تلبية احتياجات الأفراد والأعمال
         في جميع أنحاء المملكة.
       </span>

@@ -1,12 +1,13 @@
 import logo from "../../assets/logo.svg";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./NavbarMenu.css";
 
 const NavbarMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(""); // Track the active section
+  const [activeSection, setActiveSection] = useState("");
   const location = useLocation();
+  const menuRef = useRef(null); // Ref for the dropdown menu
 
   const links = [
     { name: "الرئيسية", href: "/#main", id: "main" },
@@ -35,14 +36,13 @@ const NavbarMenu = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.6, // Adjust visibility threshold
+      threshold: 0.6,
     };
 
     const observerCallback = (entries) => {
       let mostVisibleSection = null;
       let maxIntersectionRatio = 0;
 
-      // Find the most visible section
       entries.forEach((entry) => {
         if (entry.isIntersecting && entry.intersectionRatio > maxIntersectionRatio) {
           mostVisibleSection = entry.target.id;
@@ -50,11 +50,9 @@ const NavbarMenu = () => {
         }
       });
 
-      // Update active section
       if (mostVisibleSection && mostVisibleSection !== activeSection) {
         setActiveSection(mostVisibleSection);
 
-        // Update URL
         const newUrl = `/#${mostVisibleSection}`;
         if (window.location.hash !== newUrl) {
           window.history.pushState(null, "", newUrl);
@@ -64,26 +62,41 @@ const NavbarMenu = () => {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    // Observe all sections
     links.forEach((link) => {
       const section = document.getElementById(link.id);
       if (section) observer.observe(section);
     });
 
     return () => {
-      observer.disconnect(); // Cleanup observer on unmount
+      observer.disconnect();
     };
   }, [links, activeSection]);
 
   const isLinkActive = (href) => {
-    const id = href.split("#")[1]; // Extract id from href
+    const id = href.split("#")[1];
     return activeSection === id;
   };
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="fixed top-0 start-0 end-0 main-container flex py-2 justify-around items-center bg-[rgba(255,255,255,0.3)] backdrop-blur-sm mx-auto z-40">
+    <div
+      className="fixed top-0 start-0 end-0 main-container flex py-2 justify-around items-center bg-[rgba(255,255,255,0.3)] backdrop-blur-sm mx-auto z-40"
+      ref={menuRef} // Attach ref here
+    >
       <div className="scale-90 flex justify-between px-2 w-full lg:w-auto lg:justify-start items-center h-[70px] shrink-0 relative overflow-hidden z-[13]">
-        {/* Logo */}
         <Link to={"/#main"}>
           <img className="md:h-[70px] object-contain" src={logo} alt="logo" />
         </Link>
@@ -116,7 +129,6 @@ const NavbarMenu = () => {
           ))}
         </div>
       </div>
-      {/* Mobile Dropdown */}
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg lg:hidden z-50">
           <ul className="flex flex-col gap-4 p-4">
@@ -131,7 +143,7 @@ const NavbarMenu = () => {
                         : "text-[#667680]"
                     }`
                   }
-                  onClick={() => setIsMenuOpen(false)} // Close menu on link click
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
                 </NavLink>

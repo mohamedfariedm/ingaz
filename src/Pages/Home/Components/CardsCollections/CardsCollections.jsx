@@ -46,7 +46,7 @@ const CardsCollections = () => {
   return (
     <>
       <div id="trip" />
-      <div className="main-container h-auto bg-[#fbfbfb] relative mx-auto py-16 w-full">
+      <div className="main-container h-auto bg-[#fbfbfb] relative mx-auto pt-16 w-full">
         <div className="w-[90%] scale-[95%] mx-auto">
           {/* Title Section */}
           <div className="flex flex-col lg:flex-row gap-20 justify-center items-center relative mx-auto py-8 px-4 w-full animate-section opacity-0 transition-opacity duration-1000">

@@ -31,7 +31,7 @@ const ContactInformations = () => {
       <div id="contactus"></div>
       <div className="main-container scale-95 w-[92%] relative mx-auto my-5 p-4 md:py-16">
         {/* Main Section */}
-        <div className="w-full bg-[#0e4a79] rounded-[32px] flex flex-col lg:flex-row justify-between items-center px-20 py-8">
+        <div className="w-full bg-[#0e4a79] rounded-[32px] flex flex-col lg:flex-row justify-between items-center px-5 py-10 md:px-20 md:py-8">
           {/* Text Section */}
           <div className="flex flex-col gap-5 text-right text-[#fff] lg:w-2/3 px-2">
             <h1 className="text-[24px] md:text-[34px] font-extrabold leading-snug tracking-wider animate-section opacity-0 transition-opacity duration-1000">

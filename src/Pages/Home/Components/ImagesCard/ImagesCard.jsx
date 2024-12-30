@@ -30,7 +30,7 @@ const ImagesCard = () => {
     }, []);
   return (<>
   <div id="services" className=" "></div>
-<div  className="main-container h-auto bg -[#fbfbfb] w-full mt-[85px] relative  ">
+<div  className="main-container h-auto bg -[#fbfbfb] w-full md:mt-[85px] relative  ">
       {/* Background Images */}
       
       {/* Content Section */}

@@ -25,7 +25,7 @@ const ExploreCountries = () => {
     <>
     <div id="partners" ></div>
     <div className="bg-[#fbfbfb] ">
-      <div className="w-full h-auto bg-[#fbfbfb] flex flex-col items-center py-24  px-4 ">
+      <div className="w-full h-auto bg-[#fbfbfb] flex flex-col gap-6 items-center pt-5 pb-24 md:py-24  px-4 ">
       {/* Title Section */}
       <div className="text-center">
         <span className="text-[23px] text_bold_Bukra leading-[45.5px] text-[#0e4a79] block animate-section opacity-0 transition-opacity duration-1000">

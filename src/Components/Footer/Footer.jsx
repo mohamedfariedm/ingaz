@@ -119,7 +119,7 @@ const Footer = () => {
       </div>
 
         </div>
-        <span className=" text-[12px] text_small_Bukra text-[#4483B4] text-start w-full">
+        <span className=" text-[12px] text_small_Bukra text-[#4483B4] text-center md:text-start w-full">
           جميع الحقوق محفوظة لشركة إنجاز للاستقدام 2024
         </span>
       </div>

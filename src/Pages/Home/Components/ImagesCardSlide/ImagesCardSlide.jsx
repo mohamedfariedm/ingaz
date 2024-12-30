@@ -69,7 +69,7 @@ const ImagesCardSlide = () => {
   return (
     <>
       <div id="categories"></div>
-      <div className="scale-95 main-container h-auto py-16 w-full relative">
+      <div className="scale-95 main-container h-auto py-10 md:py-16 w-full relative">
         {/* Content Section */}
         <div className="w-[88%] mx-auto flex flex-col items-center md:flex-row md:items-end justify-between mb-10">
           <div className="flex flex-col gap-[24px] items-start z-[3] mt-16 sm:mt-8 md:w-[60%] animate-section opacity-0 transition-opacity duration-1000">
