@@ -36,7 +36,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex my-[125px] flex-col lg:flex-row gap-8 items-center bg-[#fff] overflow-hidden mx-auto w-[80%] md:[80%] px-4 py-8">
+    <div className="flex my-[125px] flex-col lg:flex-row gap-8 items-center bg-[#fff] overflow-hidden mx-auto w-[100%] md:[80%] px-4 py-8">
       <ToastContainer />
       {/* Form Section */}
       <div className="w-full max-w-[500px] bg-[#fbfbfb] p-8 rounded-lg">

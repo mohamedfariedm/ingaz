@@ -131,7 +131,7 @@ const NavbarMenu = () => {
       </div>
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg lg:hidden z-50">
-          <ul className="flex flex-col gap-4 p-4">
+          <ul className="flex flex-col gap-6 p-5">
             {links.map((link) => (
               <li key={link.name}>
                 <NavLink

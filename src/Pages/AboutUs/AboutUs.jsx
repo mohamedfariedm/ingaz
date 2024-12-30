@@ -29,9 +29,9 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="w-[90%] mx-auto my-0 bg-white px-4 py-8 relative ">
+      <div className="md:w-[90%] mx-auto my-0 bg-white px-4 py-8 relative ">
   {/* Section 1: Company Intro */}
-  <div className="mx-auto my-10  text-[#0e4a79] text-lg lg:text-[1rem] font-medium  leading-relaxed px-5">
+  <div className="mx-auto my-10  text-[#0e4a79] text-lg lg:text-[1rem] font-medium  leading-relaxed md:px-5">
     <p className="text-lg lg:text-[1rem]  font-medium leading-relaxed tracking-wide">
       تأسست شركة إنجاز للاستقدام في عام 2015 كإحدى شركات مجموعة إنجاز، لتقدم حلولاً
       متكاملة في مجال استقدام العمالة المنزلية والمهنية. منذ البداية، التزمت إنجاز
@@ -65,7 +65,7 @@ const AboutUs = () => {
 </div>
   <div className="md:h-[75vh] flex items-center relative">
 <div className="flex flex-col md:flex-row justify-start items-center w-[90%] mx-auto ">
-  <div className="  max-w-screen-md  text-right ps-10 py-10">
+  <div className="  max-w-screen-md  text-right md:ps-10 md:py-10">
     <h3 className="text-sm md:text-base  text_small_Bukra text-[#1d1d1d] mb-1 leading-[29px] py-3">
       كلمة رئيس مجلس الإدارة
     </h3>

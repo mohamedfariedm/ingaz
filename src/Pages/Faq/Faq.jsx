@@ -23,7 +23,7 @@ const Faq = () => {
             <h1 className="text-4xl lg:text-[2.7rem] text_bold_Bukra text-[#0e4a79] leading-[80px]">
               الأسئلة الأكثر شيوعاً
             </h1>
-            <p className="text-lg lg:text-[1.08rem] text-center text_small_Bukra  text-[#0e4a79] leading-relaxed px-[3.75rem] xl:w-[65%] mx-auto ">
+            <p className="text-lg lg:text-[1.08rem] text-center text_small_Bukra  text-[#0e4a79] leading-relaxed md:px-[3.75rem] xl:w-[65%] mx-auto ">
               نحرص على توفير إجابات واضحة لأكثر الأسئلة شيوعاً حول خدماتنا، لتسهيل
               تجربتك وضمان فهمك الكامل لكل خطوة.
             </p>
@@ -36,9 +36,9 @@ const Faq = () => {
             <div key={index} className="overflow-hidden rounded-[16px] bg-[#255e8a]">
               <button
                 onClick={() => toggleQuestion(index)}
-                className="flex justify-between items-center w-full px-6 py-4 text-left text-white"
+                className="flex justify-between gap-3 items-center w-full px-6 py-4 text-left text-white"
               >
-                <span className="text-[16px] sm:text-[19px] text_small_Bukra font-normal leading-[1.5]">
+                <span className="text-[14px] sm:text-[19px] text_small_Bukra font-normal text-start leading-[1.5]">
                   هل يمكن ترقية التأمين الطبي في حال رغبة العميل/الموظف؟
                 </span>
                 <svg

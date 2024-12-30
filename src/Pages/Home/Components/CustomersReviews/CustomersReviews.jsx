@@ -84,7 +84,7 @@ const CustomersReviews = () => {
   return (
     <>
       <div id="certifications"></div>
-      <div className="w-full bg-[#fff] relative h-[150vh] md:h-[110vh] mx-auto py-4 scale-90">
+      <div className="w-full bg-[#fff] relative h-[140vh] md:h-[110vh] mx-auto py-4 scale-90">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-20 justify-center items-center relative mx-auto pb-8 pt-12 px-4 w-[95%] animate-section opacity-0 transition-opacity duration-1000">
           <div className="flex flex-col gap-[4px] items-start self-stretch shrink-0 flex-nowrap relative z-[4]">
