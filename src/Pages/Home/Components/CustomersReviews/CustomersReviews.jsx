@@ -105,10 +105,10 @@ const CustomersReviews = () => {
         {/* Certification Section */}
         <div className="relative mt-8 md:mt-[83px] h-[150vh] md:h-auto animate-section opacity-0 transition-opacity duration-1000">
           {/* Background Box */}
-          <div className="hidden md:absolute top-0 start-0 lg:-top-[20%] lg:-start-32 w-[80%] md:flex items-center justify-center max-w-[1166px] min-h-[530px] bg-[#0e4a79] rounded-tl-[32px] rounded-bl-[32px]" />
+          <div className="absolute top-[11.5rem] -start-7 lg:-top-[20%] lg:-start-32 w-[80%] md:flex items-center justify-center max-w-[1166px] min-h-[530px] bg-[#0e4a79] rounded-tl-[32px] rounded-bl-[32px]" />
 
           {/* Swiper Section */}
-          <div className="relative -bottom-[200px] md:bottom-0  z-10 bg-[#0e4a79] rounded-[32px] md:bg-inherit md:rounded-none">
+          <div className="relative -bottom-[200px] md:bottom-0  z-10  rounded-[32px]  md:rounded-none">
             <Swiper
           dir="ltr"
           spaceBetween={20}
@@ -132,19 +132,19 @@ const CustomersReviews = () => {
                 <SwiperSlide  key={index}>
                   <div className="flex flex-col-reverse pt-5 my-auto  md:flex-row justify-center gap-6 items-center">
                     {/* Text Card */}
-                    <div className="rounded-[32px] p-6 flex flex-col gap-4 ">
+                    <div className="rounded-[32px] sm:p-6 flex flex-col gap-4 ">
                       <div className="flex flex-col gap-4 w-full max-w-[839px] bg-[#fbfbfb] rounded-[32px] px-10 py-16">
-                        <span className="text-[24px] font-bold leading-[43.68px] text-[#1d1d1d] text-right ">
+                        <span className="sm:text-[24px] font-bold leading-[43.68px] text-[#1d1d1d] text-right ">
                           {cert.title}
                         </span>
-                        <span className="text-[16px] font-medium leading-[29.12px] text-[#667680] text-right ">
+                        <span className=" text-[14px] sm:text-[16px] font-medium leading-[29.12px] text-[#667680] text-right ">
                           {cert.description}
                         </span>
                       </div>
                     </div>
 
                     {/* Images */}
-                    <div className="flex gap-10  md:gap-4 items-center  md:flex-row absolute -top-16 md:top-0 z-50    md:relative ">
+                    <div className="flex gap-10  md:gap-4 items-center  md:flex-row absolute -top-[13rem] md:top-0 z-50    md:relative ">
                                             <div
                         className="w-[100px] md:w-[262px] h-[100px] md:h-[262px] bg-cover bg-center rounded-[16px] scale-[1.2] md:scale-100"
                         style={{
@@ -166,7 +166,7 @@ const CustomersReviews = () => {
 
             {/* Navigation Buttons */}
           
-        <div className="flex absolute end-16 gap-5 mb-10  md:mb-0 justify-end ">
+        <div className="flex mt-[45%] sm:mt-0 sm:absolute end-16 gap-5 my-10  sm:mb-0 justify-center sm:justify-end w-full">
               <div className="group hover:bg-[#0e4a79] transition-transform duration-300 hover:scale-90 arrow-right cursor-pointer flex w-[64px] h-[64px] gap-[8px] justify-center items-center rounded-[32px] border border-[#e7e7e7]">
                 <FontAwesomeIcon
                   className="text-[#0e4a79] group-hover:text-white"
