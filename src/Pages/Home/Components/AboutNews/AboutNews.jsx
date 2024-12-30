@@ -30,8 +30,7 @@ const AboutNews = () => {
         "في إطار خطتها التوسعية، افتتحت شركة إنجاز فرعها الجديد في المنطقة الشرقية لتقديم خدماتها المتميزة بشكل أوسع للعملاء في المملكة.",
       date: "24 نوفمبر 2023",
       category: "توسع",
-      image:
-        "https://s3-alpha-sig.figma.com/img/3d98/2391/5e2ef5f9d7297897ebe55176aac90e5a?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CglWGWgqdJx0pKUqF7SLwsxEIxLCjGX7TMtzadywW6FaqFWWlFK9YXc6gqI6KvqWZBNvXTDM8NdR1vtPB~eYXHisAHO2279CMLbOfy3F~eSvmrtpvfMe4AA54RCdx9JmCC0xf4-fUD2w1Xkd40k~x3O24lF54E7rTsShF3UokAdtf4ITRfhoFO5oQoXhh-5ROpsGzwRppnTjea42vJbbJO4ZiyeacLO4Mwmppdc6okaF1WV5BXI8EpZLw5f3a9aR~v8Ibe9fWJTbM2Pm4XjxLQ7uow4JAGMhagiw8r70UzyVWuTtBzb1tm4kTnPs14pON3PlO0oo5Q3IkqFc6KZpLQ__",
+      image:"https://s3-alpha-sig.figma.com/img/3d98/2391/5e2ef5f9d7297897ebe55176aac90e5a?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GwvGYV1OQoxiAmfiNEpmhEqu8EDawrWp1uoGWoYAdY8CCz9xtuCN3j9T6YPWzln0SsfbBB9S712HUP6huQ6hAP3LFrM202xtHH3jPw00YmhEiDIhAJAJutxyUfLFhlMLmqhOfBkSmWz0lvttEsLTFLlBeD6x9IVWXUG1V5Y8E3RL9HyfQ8sb4lpA2KgjG4ABgPy4w5YZkOXtwDspxeF9jlE471U9By5RH9fkm5vSXm-isEQm4jWr5vuwL0o6MPoDvVWEWXXdEJfQbYhtNYBi-c6c5lkbojA40mP3P1yvOynLpHK1ue96gyweqiowcIS7pW7Ok2CQRTkiWNbW0xLGWw__"
     },
     {
       title:
@@ -40,8 +39,7 @@ const AboutNews = () => {
         "حصلت شركة إنجاز على شهادة ISO 9001:2015 في إدارة الجودة، تأكيدًا على التزامها بتطبيق أفضل الممارسات لتلبية توقعات العملاء وضمان أعلى مستويات الجودة.",
       date: "10 ديسمبر 2023",
       category: "خدمات جديدة",
-      image:
-        "https://s3-alpha-sig.figma.com/img/4c95/2139/892dbb2f32ffd0c6cbf0542d41106d0b?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kJ6FfWoTeAaISOhijfH7X-SmN2c44CWbH4gO-~mbtVdNOZb-cAWmHMuT2LOrrXY8T-vpSHajswbv5dMzIcllThdXdhGzXp8VQmTpoYftlNVTBTBn8gU8SzKr7ZzpGBrg4gnKFfimJ6w-05MbDeG4Iub5D~yEgm~wyNY3nQvLpUufAylRZHglASzZXfTvKahXjWFc6kaaHECeAbHdFvD3CdyIovao0og~qWraN-eYcYuNxLsVb3bTkB308pILbj8KijnwJ-6RDZnZfiDMNmPQxib6V~xwM1Rq9l5foa1ePIO7iJprni28jC51OIlp3IDfxxZsiCuf3aDO5T4-OsTEAg__",
+      image:"https://s3-alpha-sig.figma.com/img/4c95/2139/892dbb2f32ffd0c6cbf0542d41106d0b?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WN7mfUqcI1tSr2COvQOObLbeXaTg5Fm6v5BhZ1-EXCkXItZ7YZaW4~NK3v5rylYhY9EH-q-MhqQZIkCfwLtbSXOpaD8vVJedletQiIQDGHOb15x1MbaEsZAcdIXjs0enuFTFhX7v9edAgdpJru4CSuY2lsR3uW8e1-EXg1b2gH0LaVtWJRgtswAigue6qaX2RWU7WzUuoqBXAQ7lHiChHERKnnkkN0xZWVOF1su8IoxgtmNIJAFrtfLuqQPSwqP3LHz~HjSEGt4IR7x1sHgCdXc-9UIq5D4AiLYBiEBj7AA36SH6T5Aqs6A1BISlYf7XPpM8UTb9E1aiI598t4b~7A__"
     },
     {
       title: "إطلاق خدمة تدريب وتأهيل العمالة لضمان أعلى مستويات الكفاءة قبل الاستقدام",
@@ -49,8 +47,7 @@ const AboutNews = () => {
         "أعلنت شركة إنجاز عن إطلاق خدمة جديدة تركز على تدريب العمالة وتأهيلها وفق أعلى المعايير العالمية قبل وصولها إلى العملاء، بهدف تعزيز الكفاءة والاحترافية.",
       date: "1 يناير 2024",
       category: "شهادة",
-      image:
-        "https://s3-alpha-sig.figma.com/img/c90f/b6b4/a3306158637335ea92a42ffe8bef973a?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EIjpVrYL~F2ENdLffmVPAcbod6E9REx9YppF7-pKppeiA47EnHLW-xWavWgtLwcXWPm~HyRp4VmchfMU2IAVVyOydWciKzNd~JRDRyPdMYmEsbmg684j83FQS2kliyo-vJ7YBvg85O0CItQrWQAjEHggKJqT080tnbuaFABj1-d2Ax~JJBbpJx7KCfhSgDa~RiUXnBCaWlUmzI9M1BCo1kfO9qFli3ypdXaQ9kUijjoyXOmxT2Z~~PNniieT-t4IMbVoH21i8aeR-lxTC6AU66RFyXxSk2SSPqwzrRrMGNO5YHAX6IKQE21qxNSSn3NubCVwP7jjLO~eqsYp~2Bjsg__",
+      image:"https://s3-alpha-sig.figma.com/img/c90f/b6b4/a3306158637335ea92a42ffe8bef973a?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a-ub73lHjA-JLYMgJrkeu~FoX3O89pINc8frTO-tFgSnPQuCdskdcoQMmKzaYO2amSweKN0IqGZqzHqX4TWSHplnDXnEtwu0PyQi28w0AiwA-bp9vBxQhHf5kcd6bAzGqrcWsKEtBbu5D~XTywM9c6-iVAC~G0KVDXzFhv-zF4xwWR7jrIuwXgkz7eNVUWiVomzaDYBFMM5PjpHX6f12cWdgukVq~EhMgaNLtdjA2pdgHtE3zEifbDRunu~EKuWRugoi08mU-tqijy-F8rsJvQODiqFfRzULtV3TgtKCCMDggMWq4ZlUnvQ3yTew4z8ttAQ9tv4l3wo2XKjvxR80nw__"
     },
   ];
 

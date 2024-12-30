@@ -248,7 +248,7 @@ const News = () => {
               <div
                 className="h-[303px] bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
                 style={{
-                  backgroundImage: `url(https://s3-alpha-sig.figma.com/img/3d98/2391/5e2ef5f9d7297897ebe55176aac90e5a?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CglWGWgqdJx0pKUqF7SLwsxEIxLCjGX7TMtzadywW6FaqFWWlFK9YXc6gqI6KvqWZBNvXTDM8NdR1vtPB~eYXHisAHO2279CMLbOfy3F~eSvmrtpvfMe4AA54RCdx9JmCC0xf4-fUD2w1Xkd40k~x3O24lF54E7rTsShF3UokAdtf4ITRfhoFO5oQoXhh-5ROpsGzwRppnTjea42vJbbJO4ZiyeacLO4Mwmppdc6okaF1WV5BXI8EpZLw5f3a9aR~v8Ibe9fWJTbM2Pm4XjxLQ7uow4JAGMhagiw8r70UzyVWuTtBzb1tm4kTnPs14pON3PlO0oo5Q3IkqFc6KZpLQ__)`,
+                  backgroundImage: `url(https://s3-alpha-sig.figma.com/img/3d98/2391/5e2ef5f9d7297897ebe55176aac90e5a?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GwvGYV1OQoxiAmfiNEpmhEqu8EDawrWp1uoGWoYAdY8CCz9xtuCN3j9T6YPWzln0SsfbBB9S712HUP6huQ6hAP3LFrM202xtHH3jPw00YmhEiDIhAJAJutxyUfLFhlMLmqhOfBkSmWz0lvttEsLTFLlBeD6x9IVWXUG1V5Y8E3RL9HyfQ8sb4lpA2KgjG4ABgPy4w5YZkOXtwDspxeF9jlE471U9By5RH9fkm5vSXm-isEQm4jWr5vuwL0o6MPoDvVWEWXXdEJfQbYhtNYBi-c6c5lkbojA40mP3P1yvOynLpHK1ue96gyweqiowcIS7pW7Ok2CQRTkiWNbW0xLGWw__)`,
                 }}
               ></div>
             </div>

@@ -10,8 +10,7 @@ const CardsCollections = () => {
       id: 1,
       text: "استقبال العميل والترحيب به حضورياً او الاونلاين.",
       image:
-        "https://s3-alpha-sig.figma.com/img/5b9e/7bf2/3bcbd9228014f9ee714624cc0885a382?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g9c3oY4NkI5sdKFk3iAuIYOwe0~1nzKWodVNxzRZDBbh9MiGamM9wsv9369outrAaoCw~7IML9YOA9l4GRbAnJikW1PQM3Fo0xHtYMjkE6F9vCQSbWGZoW1ycCMqNR3G-qh7nAk9e5lfSrGiBB2WFeUHy2flOFhuqIUL40YRUwe2c6ZsxAn9ZZFr64uy0-LsIocS5BxmEs0XNylDyo3fMA8FsXZBfSf7Di9k2iOMlMi1eQJ~k~68ddwFbisMgGJGMmDIWyMuZv-LKEaHvgG266r47k1--BOelQ8FzegIhvh3rKH49NW4w9qWpw8wOoC0p9KaCN6hqf7rDerkCusDtQ__",
-    },
+"https://s3-alpha-sig.figma.com/img/5b9e/7bf2/3bcbd9228014f9ee714624cc0885a382?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ak7~nNa3G9FNf-B9ibSChXNonDtGtxQ-WxmyxmVWHZj52oDHvvJQHOgWRwkq6kEEc2ctaXWr~wnoVuz~OwekwNyjSIi84b~NQFNNAAUXRwIwqLz2q9GpB6nbhqJD96LDJqW1U8yIri5bR2-vGfL6mtRnml1OEOCLSVxsFNl0ttYaZaUaxFGvv99pxMqd7brxBdxGGya6G93fjAQCdJtwYFkDPAUt9jWZVmCrWrsX0Ttu3hu5rIMwQtHYvHJa~W36~1U22GT~vU9HeHWNHraot1BGbCcaDpkIthh8uSdo~MKL-854cKQDyNdYc9zVW9l-3IMUUvGck2e47BTyytYv-w__",    },
     { id: 2, text: "تحديد جنسية العاملة وعدد أفراد الأسرة.", image: "https://placehold.co/650x693" },
     { id: 3, text: "استخراج التاشيرة عبر منصة مساند.", image: "https://placehold.co/650x693" },
     { id: 4, text: "استخراج السيرة الذاتية المناسبة.", image: "https://placehold.co/650x693" },

@@ -13,30 +13,26 @@ const certifications = [
     title: "أيزو 9001 : 2015",
     description:
       "المواصفة الدولية ISO 9001:2015 هي المعيار الذي يحدد متطلبات نظام إدارة الجودة (QMS). من خلال تطبيق هذا المعيار في مجالات عملها، أثبتت شركة إنجاز كفاءتها في تقديم منتجات وخدمات تلبي احتياجات العملاء وتستوفي المتطلبات التنظيمية بكفاءة عالية.",
-    image:
-      "https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NW7g8C~Hrs3D09lWeZETwEQtprm--17vqgMrPK0RYVVgk~1I5tdOhq2ATZDZBFj-ZOEIwLrJEhiVQhETZn4QO4UOsxvrvl2Jpk8VVSAau2vz2sBS7abBo-GsmBzQdbfXEnTw0duhWa-jsfDC~lpU6rs1eoz4qd2QPBRMJ9Ceow-IJo9s9jxsaee03Co5DKsDHUBZPPqkwj4DtzTmRvT-yYH-cvcJMGneFC9C~nrG9POvfq70gI11JUbgfFPLly5Upw8p02ojI-F2Sw~nQHOvO8Yj7HC9XxjxBANuZHU3jrN34Mg2biYuru1ZteXmKfvrt5yYxU1mxn~D5e70l-Hjbg__",
-  },
+    image:"https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YJ0pP8~Kwb02IwPkPe81PmcZcbl7M9-gu49Sk8iOJldtBCxv88q68fM5scGHPJ~AcQefeU5JCOhYgwwVpb-vU-to5KHsRqFxNu5MwTVRP0fHUTKXvJYHXmstlbK1S7m-b6~uCUxSrvyMHMFaJpYx1wS3IaVt59HaKXLb1G3crUeuwayYVqGETEX7xj~fXPqk7za3HoLhpoNJi7yPdxQrjLJaNq1K6~60C6WmhsPbtudOWLjI9nTClIZXddqehoE7Hj8CkF7py1J2X0xeF2WRPE9sI6MqKqHVxFNuAi574fgD8yfvaNSpkBqVkJjcVYGr0E6M~SuqtNhxWZ0iL58xkg__" 
+      },
   {
     title: "أيزو 9001 : 2015",
     description:
       "المواصفة الدولية ISO 9001:2015 هي المعيار الذي يحدد متطلبات نظام إدارة الجودة (QMS). من خلال تطبيق هذا المعيار في مجالات عملها، أثبتت شركة إنجاز كفاءتها في تقديم منتجات وخدمات تلبي احتياجات العملاء وتستوفي المتطلبات التنظيمية بكفاءة عالية.",
-    image:
-      "https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NW7g8C~Hrs3D09lWeZETwEQtprm--17vqgMrPK0RYVVgk~1I5tdOhq2ATZDZBFj-ZOEIwLrJEhiVQhETZn4QO4UOsxvrvl2Jpk8VVSAau2vz2sBS7abBo-GsmBzQdbfXEnTw0duhWa-jsfDC~lpU6rs1eoz4qd2QPBRMJ9Ceow-IJo9s9jxsaee03Co5DKsDHUBZPPqkwj4DtzTmRvT-yYH-cvcJMGneFC9C~nrG9POvfq70gI11JUbgfFPLly5Upw8p02ojI-F2Sw~nQHOvO8Yj7HC9XxjxBANuZHU3jrN34Mg2biYuru1ZteXmKfvrt5yYxU1mxn~D5e70l-Hjbg__",
-  },
+      image:"https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YJ0pP8~Kwb02IwPkPe81PmcZcbl7M9-gu49Sk8iOJldtBCxv88q68fM5scGHPJ~AcQefeU5JCOhYgwwVpb-vU-to5KHsRqFxNu5MwTVRP0fHUTKXvJYHXmstlbK1S7m-b6~uCUxSrvyMHMFaJpYx1wS3IaVt59HaKXLb1G3crUeuwayYVqGETEX7xj~fXPqk7za3HoLhpoNJi7yPdxQrjLJaNq1K6~60C6WmhsPbtudOWLjI9nTClIZXddqehoE7Hj8CkF7py1J2X0xeF2WRPE9sI6MqKqHVxFNuAi574fgD8yfvaNSpkBqVkJjcVYGr0E6M~SuqtNhxWZ0iL58xkg__" 
+    },
   {
     title: "أيزو 9001 : 2015",
     description:
       "المواصفة الدولية ISO 9001:2015 هي المعيار الذي يحدد متطلبات نظام إدارة الجودة (QMS). من خلال تطبيق هذا المعيار في مجالات عملها، أثبتت شركة إنجاز كفاءتها في تقديم منتجات وخدمات تلبي احتياجات العملاء وتستوفي المتطلبات التنظيمية بكفاءة عالية.",
-    image:
-      "https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NW7g8C~Hrs3D09lWeZETwEQtprm--17vqgMrPK0RYVVgk~1I5tdOhq2ATZDZBFj-ZOEIwLrJEhiVQhETZn4QO4UOsxvrvl2Jpk8VVSAau2vz2sBS7abBo-GsmBzQdbfXEnTw0duhWa-jsfDC~lpU6rs1eoz4qd2QPBRMJ9Ceow-IJo9s9jxsaee03Co5DKsDHUBZPPqkwj4DtzTmRvT-yYH-cvcJMGneFC9C~nrG9POvfq70gI11JUbgfFPLly5Upw8p02ojI-F2Sw~nQHOvO8Yj7HC9XxjxBANuZHU3jrN34Mg2biYuru1ZteXmKfvrt5yYxU1mxn~D5e70l-Hjbg__",
-  },
+      image:"https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YJ0pP8~Kwb02IwPkPe81PmcZcbl7M9-gu49Sk8iOJldtBCxv88q68fM5scGHPJ~AcQefeU5JCOhYgwwVpb-vU-to5KHsRqFxNu5MwTVRP0fHUTKXvJYHXmstlbK1S7m-b6~uCUxSrvyMHMFaJpYx1wS3IaVt59HaKXLb1G3crUeuwayYVqGETEX7xj~fXPqk7za3HoLhpoNJi7yPdxQrjLJaNq1K6~60C6WmhsPbtudOWLjI9nTClIZXddqehoE7Hj8CkF7py1J2X0xeF2WRPE9sI6MqKqHVxFNuAi574fgD8yfvaNSpkBqVkJjcVYGr0E6M~SuqtNhxWZ0iL58xkg__" 
+    },
   {
     title: "أيزو 9001 : 2015",
     description:
       "المواصفة الدولية ISO 9001:2015 هي المعيار الذي يحدد متطلبات نظام إدارة الجودة (QMS). من خلال تطبيق هذا المعيار في مجالات عملها، أثبتت شركة إنجاز كفاءتها في تقديم منتجات وخدمات تلبي احتياجات العملاء وتستوفي المتطلبات التنظيمية بكفاءة عالية.",
-    image:
-      "https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NW7g8C~Hrs3D09lWeZETwEQtprm--17vqgMrPK0RYVVgk~1I5tdOhq2ATZDZBFj-ZOEIwLrJEhiVQhETZn4QO4UOsxvrvl2Jpk8VVSAau2vz2sBS7abBo-GsmBzQdbfXEnTw0duhWa-jsfDC~lpU6rs1eoz4qd2QPBRMJ9Ceow-IJo9s9jxsaee03Co5DKsDHUBZPPqkwj4DtzTmRvT-yYH-cvcJMGneFC9C~nrG9POvfq70gI11JUbgfFPLly5Upw8p02ojI-F2Sw~nQHOvO8Yj7HC9XxjxBANuZHU3jrN34Mg2biYuru1ZteXmKfvrt5yYxU1mxn~D5e70l-Hjbg__",
-  },
+      image:"https://s3-alpha-sig.figma.com/img/b291/fe1f/6eb44daff1730c79b3b745d96a02c6d6?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YJ0pP8~Kwb02IwPkPe81PmcZcbl7M9-gu49Sk8iOJldtBCxv88q68fM5scGHPJ~AcQefeU5JCOhYgwwVpb-vU-to5KHsRqFxNu5MwTVRP0fHUTKXvJYHXmstlbK1S7m-b6~uCUxSrvyMHMFaJpYx1wS3IaVt59HaKXLb1G3crUeuwayYVqGETEX7xj~fXPqk7za3HoLhpoNJi7yPdxQrjLJaNq1K6~60C6WmhsPbtudOWLjI9nTClIZXddqehoE7Hj8CkF7py1J2X0xeF2WRPE9sI6MqKqHVxFNuAi574fgD8yfvaNSpkBqVkJjcVYGr0E6M~SuqtNhxWZ0iL58xkg__" 
+    },
 ];
 
 const CustomersReviews = () => {
