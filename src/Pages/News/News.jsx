@@ -254,7 +254,7 @@ const News = () => {
             </div>
             {/* Card Content */}
             <div className="flex flex-col gap-2">
-            <span className="text-[17px] font-semibold group-hover:text-[#667680] transition-transform duration-500 tracking-wide leading-[35px] text-[#1d1d1d] line-clamp-3">
+            <span className="text-[17px] font-semibold group-hover:text-[#667680] transition-transform duration-500 md:tracking-wide leading-[35px] text-[#1d1d1d] line-clamp-3">
             افتتاح فرع جديد لشركة إنجاز في المنطقة الشرقية لخدمة عملائنا بشكل أفضل
               </span>
               <span className="text-[13px] font-normal leading-[28px] text-[#667680] line-clamp-3">

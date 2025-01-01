@@ -94,7 +94,7 @@ const AboutNews = () => {
                 </div>
                 {/* Card Content */}
                 <div className="p-4 flex flex-col gap-4">
-                  <span className="text-[18px] font-semibold group-hover:text-[#667680] transition-transform duration-500 tracking-wide leading-[35px] text-[#1d1d1d] line-clamp-2">
+                  <span className="text-[18px] font-semibold group-hover:text-[#667680] transition-transform duration-500 md:tracking-wide leading-[35px] text-[#1d1d1d] line-clamp-2">
                     {news.title}
                   </span>
                   <span className="text-[15px] font-normal leading-[28px] text-[#667680] line-clamp-3">

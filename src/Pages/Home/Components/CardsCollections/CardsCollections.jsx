@@ -55,7 +55,7 @@ const CardsCollections = () => {
               <span className="text_small_Bukra text-[#0e4a79] text-right">
                 رحلة العميل
               </span>
-              <span className="text-center lg:text-right text-[28px] text_bold_Bukra leading-[54.6px] text-[#0e4a79] tracking-[0.5px]">
+              <span className="text-center lg:text-right text-[28px] text_bold_Bukra leading-[54.6px] text-[#0e4a79] md:tracking-[0.5px]">
                 من طلب الخدمة إلى وصول العمالة
               </span>
             </div>

@@ -88,14 +88,14 @@ const CustomersReviews = () => {
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-20 justify-center items-center relative mx-auto pb-8 pt-12 px-4 w-[95%] animate-section opacity-0 transition-opacity duration-1000">
           <div className="flex flex-col gap-[4px] items-start self-stretch shrink-0 flex-nowrap relative z-[4]">
-            <span className="text-[16px] text_small_Bukra text-start font-normal leading-[29px] text-[#0e4a79] tracking-[0.32px]">
+            <span className="text-[16px] text_small_Bukra text-start font-normal leading-[29px] text-[#0e4a79] md:tracking-[0.32px]">
               الشهادات
             </span>
-            <span className="text-[30px] text_bold_Bukra font-bold leading-[54.6px] text-[#0e4a79] tracking-[0.6px]">
+            <span className="text-[30px] text_bold_Bukra font-bold leading-[54.6px] text-[#0e4a79] md:tracking-[0.6px]">
               شهادات الجودة والتميز
             </span>
           </div>
-          <span className="text-start md:text-right text-[17px] text_small_Bukra font-normal leading-[29.12px] text-[#667680] tracking-[0.32px]">
+          <span className="text-start md:text-right text-[17px] text_small_Bukra font-normal leading-[29.12px] text-[#667680] md:tracking-[0.32px]">
             تفخر شركة إنجاز بحصولها على شهادات جودة معتمدة، تعكس التزامنا بأعلى
             المعايير العالمية في تقديم خدمات متميزة تلبي توقعات عملائنا وتحقق
             رضاهم.
